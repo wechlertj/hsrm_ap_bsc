@@ -1,0 +1,22 @@
+\documentclass{article}
+\usepackage[a4paper,margin=0pt]{geometry}
+\usepackage{graphicx}
+\usepackage{xcolor}
+
+\def\Step{3mm}
+\def\MyDot{\color{lightgray}\scalebox{1}{.}}
+
+\def\Dotbox{\hbox to \Step{\smash{\MyDot}\hfil}}
+\def\DotPattern{%
+  \hbox to \paperwidth{\leaders\Dotbox\hfill}\kern-.3mm
+  \vbox to \Step{\offinterlineskip\leaders\hbox to \paperwidth{\leaders\Dotbox\hfill}\vfill}
+  \nointerlineskip\hbox to \paperwidth{\leaders\Dotbox\hfill}%
+}
+\def\DotGrid{\par\leaders\vbox{\DotPattern}\vfill}
+
+\pagestyle{empty}
+\begin{document} 
+\mbox{}\DotGrid
+\newpage
+\mbox{}\DotGrid
+\end{document}
