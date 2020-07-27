@@ -1,0 +1,312 @@
+\documentclass[a4paper]{article}
+
+\usepackage[landscape=true]{geometry}
+\usepackage{tikz}
+\usepackage{lipsum}
+\usepackage{textcomp}
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[fleqn]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[arrowdel]{physics}
+\usepackage{setspace}
+\setstretch{1.25}
+
+\newcommand{\verhaeltnissBreite}{0.19}
+
+
+\newcommand\copyrighttext{%
+  \footnotesize \textbf{Autoren}: \\Jens Sokat und Tim-Jonas Wechler
+}
+
+\newcommand{\eqbox}[1]{\fbox{\parbox[t]{\dimexpr\textwidth-\fboxsep-\fboxrule\relax}{\scriptsize#1}}}
+
+\begin{document}
+
+    \newgeometry{margin=1cm} % Ränder kleiner
+    \thispagestyle{empty}   
+    
+    
+    \begin{minipage}[t]{\verhaeltnissBreite\textwidth}
+        \eqbox{
+            \textbf{\footnotesize{Schwingungen}}\\
+            $y(t)  = \vu{y} \cdot sin (\omega\cdot t + \varphi_{0}) $\\
+            $v(t)  =\vu{y}\omega \cdot sin(\omega t+\varphi_{0})  $ \\
+            $a(t)  =-\vu{y}\omega^{2}sin(\omega t+\varphi_{0})$ \\
+            $\omega =2\pi f$ ; $f =\frac{1}{T}=\frac{\omega}{2\pi}$ \\
+            $\vu{v}  =\vu{y}\omega$ ;  $\vu{a}  =\vu{y}\omega^{2} ;$ \\
+            $Merke: cos(\alpha)  =sin(\alpha +\frac{\pi}{2})$
+        }
+        \eqbox{
+            \textbf{\footnotesize{Federpendel}} \\
+            $F_{rueck}=-c\cdot s$;\; $c=-\frac{F}{s}$;\; $s=\frac{m \cdot g}{-c}$  \\
+            $T=2\pi \sqrt{\frac{m}{c}}$;\; $ \omega=\sqrt{\frac{c}{m}}$;\; $f=\frac{1}{2\pi}\cdot \sqrt{\frac{c}{m}}$; \\
+            $F=m\cdot \vu{y}\cdot \omega^{2}$;\; $\vu{v}=\vu{y}\cdot \omega_{0}$; \\
+            $E_{ges}=E_{KIN}+E_{POT}=\frac{1}{2}c\vu{y}$; 
+        }
+        \eqbox{
+            \textbf{\footnotesize{Mathematisches Pendel (auch Fadenpendel)}}\\
+            $T=2\pi \sqrt{\frac{l}{g}}$;\; $f=\frac{1}{2\pi}\sqrt{\frac{g}{l}}$;\; $D=\frac{m\cdot g}{s}$; \\
+            $F_{R}=F_{g}\cdot sin(\varphi)$;\; $F_{R}=m\cdot g\cdot \frac{s}{l}$; \\
+            $\omega=\sqrt{\frac{g}{l}}$;\; $v=\sqrt{2gv_0}$;\; $g=4\pi^2(\frac{l}{T_1^2-T_2^2})$
+        }
+        \eqbox{
+            \textbf{\footnotesize{Physikalisches Pendel}}\\
+            $\omega_{0}=\sqrt{\frac{mgd}{J_{P}}}$;\; $T_{0}=2\pi\sqrt{\frac{J_{P}}{mgd}}$; \\
+            $J_{P}=J_{S}+m_{ges}\cdot d^2$;\; $J_{s}=\frac{T_{0}^{2}}{4\pi^{2}}\cdot c^*$; \\
+            $c^*=\omega_{0}^{2} \cdot J_{S}=-(\frac{M_{rueck}}{\beta})$; \\ 
+            mit $sin(\beta)\cong\beta$ bei \textit{Kleinwinkelnäherung} $M=J_{P}\cdot \frac{d^2\beta}{dt^2}=J_{P}\cdot \ddot{\beta}$;
+        }
+        \eqbox{
+            \textbf{\footnotesize{Torsionspendel}}\\
+            $M_{r}=-c^*\beta$;\; $\beta(t)=\vu{\beta}\cdot cos(\omega_{0}t+\varphi_{0})$; \\
+            $\omega_{0}=\frac{c^*}{J_{S}}$;\; $T_{0}=2\pi\sqrt{\frac{J_{S}}{c^*}}$; \\
+            $J_{S}=J_{A}-mr^2=mr\cdot \frac{T_{0}^2}{4\pi}\cdot g-r$;     
+        }
+        \eqbox{
+            \textbf{\footnotesize{Flüssigkeitspendel im U-Rohr}}\\
+            $m_{fl}=V_{H}\cdot \rho$;\; $\omega_{0}^2=\frac{2A\rho g}{m_{ges}}$; $\omega_{0}^2=\frac{2g}{l}$; \\
+            $T_{0}=2\pi\sqrt{\frac{m_{ges}}{2A\rho g}}$;\; $m_{ges}=A\cdot l\cdot \rho$;\\
+            $y(t)=\vu{y} cos(\omega_{0}t+\varphi_{0}$);\; $T_{0}=2\pi\sqrt{\frac{l}{2g}}$;
+        }   
+        \eqbox{ 
+            \textbf{\footnotesize{Energie}}  \\
+                $E_{GES}=E_{KIN}+E_{POT}=\frac{1}{2}cy^2$;\\
+                $\mathbf{E_{kin}}=\frac{1}{2}m\dot{y}^2$\\
+                $\Rightarrow\frac{1}{2}m\vu{y}^2\cdot \omega_{0}^2\cdot sin^2(\omega_{0}t+\varphi_{0})$;  \\
+                $\mathbf{E_{pot}}=\frac{1}{2}cy^2=\frac{1}{2}\cdot c\cdot \vu{y}^2\cdot cos(\omega_{0}t+\varphi_{0})$; \\
+                $0\leqslant E_{POT}\leqslant\frac{1}{2}cy^2$\\
+                \\\textbf{Energieniveaus}: \\
+                $\mathbf{E_{kin}}=\frac{1}{2}mv^2 $\\$\Rightarrow \frac{1}{2}D\vu{y}^2\cdot [1-cos^2(\omega_{0}t+\varphi_{0})]$\\
+                \\\textbf{Arbeit bei $y_{1}\rightarrow y_{2}$}:\\
+                $W_{12}=[\frac{1}{2}Dy^2]_{y_{1}}^{y_{2}}=\frac{1}{2}D(y_{2}^2-y_{1}^2)$;
+        }
+        \copyrighttext
+    \end{minipage}
+    \begin{minipage}[t]{\verhaeltnissBreite\textwidth}
+        \eqbox{
+            \textbf{\footnotesize{Freie gedämpfte Schwingung}}\\
+                \textbf{Gleit und Rollreibkraft}: $F_{R}=\pm\mu\cdot F_{N}$;  \\
+                \textbf{Viskose Reibkraft}: $F_{R}=-b\cdot v(t)$; \\
+                \textbf{Geschw. unabh. Luftreibkraft}: \\
+                $F_{R}=-k\cdot v^2(t)$; \\
+                \\\textbf{für den gedämpften Teil} \\
+                $y(t)=\vu{y}\cdot e^{-\delta t}\cdot cos(\omega_dt+\varphi_0)$\\
+                $\delta=\frac{b}{2m}$; \quad $D=\frac{\delta}{\omega_0}$; \quad$\omega_d^2=\omega_0^2-\delta^2$;\\
+                $\delta$ = Abklingkoeffizient \\
+                $b$ = Dämpfungskoeffizient \\
+                $D$ = Dämpfungsgrad \\
+                $\omega_0$ = ungedämpfter Teil \\
+                $\omega_d$ = gedämpfter Teil \\ 
+                \\\textbf{Schwingfall}: $D<1$ \\ $\Rightarrow$ $y(t)=\vu{y}_0\cdot e^{-\delta t} cos(\omega_0t+\varphi_0)$; \\
+                \\\textbf{Kriechfall}: $D>1$ \\ $\Rightarrow y(t)=\vu{y}_1\cdot e^{-\omega_0(D+\sqrt{D^2-1})t}+\vu{y}_2\cdot e^{-\omega_0(D+\sqrt{D^2-1})t}$;\\            
+                \\\textbf{Aperiodischer Grenzfall}: $D=1$\\$\Rightarrow y(t)=(\vu{y}_1+\vu{y}_2)\cdot e^{-\omega_0t}$;\\
+                \\\textbf{Logarithmisches Dekrement}:\\ 
+                $\Lambda=ln(k)=\delta\cdot T_d = ln(\frac{\vu{y}_i}{\vu{y}_i+1})$; \\
+                $k=\sqrt[n]{\frac{\vu{y}_i}{\vu{y}_i+n}}$; 
+        }
+        \eqbox{
+            \textbf{\footnotesize{Erzwungene Schwingungen}}\\
+                $A=\frac{\vu{F}_E}{c}\cdot \frac{1}{\sqrt{(1-\eta^2)^2+(2D\eta)^2}}$\\$\Rightarrow\frac{\vu{F}_E}{c}\cdot \frac{1 (Bei\,Resonanz)}{2D\sqrt{1-D^2}}$; \\
+                $F_E=-cy$;\; $F_E=\vu{F}_E\cdot cos(\omega_Et)$;\\
+                $F_{ges}=F_{rueck}+F_R+F_E$; \\
+                $\eta_{res}=\sqrt{1-2D^2}$;\; $\eta=\frac{\omega_E}{\omega_0}$;\\
+                \textbf{Phasendifferenz}: $\alpha=arctan(\frac{2D\eta}{(1-\eta^2)})$; \\
+                $\omega_{res}=\omega_0\cdot \sqrt{1-D^2}=\sqrt{\omega_0^2-2\delta^2}$;                 
+        }
+        
+        \eqbox{
+            \textbf{\footnotesize{Gekoppelte Pendel}}\\
+                \textbf{Gleichphasig}: $f_1=f_0=\frac{1}{2\pi}\cdot \sqrt{\frac{c}{m}}$;\\
+                \textbf{Gegenphasig}: $f_2=\frac{1}{2\pi}\cdot \sqrt{\frac{c+2c_{12}}{m}}$;\\
+                \\\textbf{Kopplungsgrad k}:\\ $k=\frac{c_{12}}{c+c_{12}}=\frac{T_1^2-T_2^2}{T_1^2+T_2^2}=\frac{f_2^2-f_1^2}{f_1^2+f_2^2}$\\
+                \textit{lose Kopplung}: $k\ll 1$ und $f_2\approx f_1$;\\
+                \textit{feste Kopplung}: $k\approx 1$ und $f_2\neq f_1$;\\
+                \\$y_1(t)=2\vu{y}cos(\frac{\omega_1+\omega_2}{2}t)\cdot cos(\frac{\omega_1-\omega_2}{2}t)$; \\
+                $y_2(t)=2\vu{y}sin(\frac{\omega_1+\omega_2}{2}t)\cdot sin(\frac{\omega_1-\omega_2}{2}t)$    
+        } 
+    \end{minipage}
+    \begin{minipage}[t]{\verhaeltnissBreite\textwidth}
+        \eqbox{
+            \textbf{\footnotesize{Interferenz}}\\
+            \textbf{bei gleicher Raumrichtung}: \\
+                $\vu{y}_{neu}$\\$\Rightarrow\sqrt{\vu{y}_1^2+2\vu{y}_1\vu{y}_2\cdot cos(\varphi_{01}-\varphi_{02})+\vu{y}_2^2}$; \\
+                $tan(\varphi_{neu})=\frac{\vu{y}_1sin(\varphi_{01})+\vu{y}_2sin(\varphi_{02})}{\vu{y}_1cos(\varphi_{01})+\vu{y}_2cos(\varphi_{02})}$; \\ 
+                $f_{neu}=\frac{f_1+f_2}{2}=\frac{\omega_{neu}}{2\pi}$; \\
+                $T_{neu}=2\cdot\frac{T_1\cdot  T_2}{T_1+T_2}=\frac{1}{f_{neu}}$\\
+            \\\textbf{Schwebung}:\\
+                $y(t)_{neu}=y_1(t)+y_2(t)$\\$\Rightarrow2\vu{y}cos(\frac{\omega_1+\omega_2}{2}t)\cdot cos(\frac{\omega_1-\omega_2}{2}t)$\\
+                $f_s=f_1-f_2$; \quad $T_s=\frac{T_1\cdot T_2}{T_1-T_2}=\frac{1}{f_s}$; \\
+            \\\textbf{Überlagerung bei großem $\Delta f$}:\\
+                $y_R=\vu{y}[sin(\omega t)+\frac{1}{3}sin(3\omega t)+\frac{1}{5}sin(5\omega t)]$; \\ 
+                wenn $\frac{f_{gross}}{f_{klein}}=\in\mathbb{N}$ und \\
+                Überl.:$\bot \Rightarrow Lissajoue$;
+        }  
+        \eqbox{
+            \textbf{\footnotesize{Longitudinale Wellen}}\\
+                \textit{Gas}: $c=\sqrt{\frac{xp}{\rho}}$\quad
+                \textit{Fluid}: $c=\sqrt{\frac{k}{\rho}}$\\
+                \textit{Stäbe}: $c=\sqrt{\frac{E}{\rho}}$ \\
+                \textit{Torsion Rundstab}: $c=\sqrt{\frac{G}{\rho}}$\\
+                \textit{E-mag Welle in Materie:} \\$c=\frac{1}{\sqrt{\varepsilon_r\varepsilon_0\mu_r\mu_0}}$
+                \textit{E-mag Welle in Vakuum:} \\$c=\frac{1}{\sqrt{\varepsilon_0\mu_0}}$
+                
+        }
+        
+        \eqbox{
+            \textbf{\footnotesize{Totalreflexion}}\\
+            $\sin(\varepsilon_g)=\frac{n'}{n}$ mit n' = Dünneres Medium\\
+            \textbf{Lichtwellenleiter}: \\$\sin(\delta_{max})=\sqrt{n_1^2-n_2^2}$;
+        } 
+        \eqbox{
+            \textbf{\footnotesize{Beugung am Gitter}}\\
+            \textit{Gitterkonstante g}: $\frac{s}{n}$ mit n = Striche;\\
+            für $\alpha_n > 90^{\circ}$:\\
+            \textit{Maxima}: $\sin(\alpha_n)=n\cdot \frac{\lambda}{g}$;\\
+            \textit{Minima}: $\sin(\alpha_n)=(n+\frac{1}{2})\cdot \frac{\lambda}{g}$;
+        }
+        \eqbox{
+            \textbf{\footnotesize{Beugung am Spalt}}\\  
+            \textit{Maxima}: $\sin(\alpha_n)=(n+\frac{1}{2}]\cdot \frac{\lambda}{b}$;\\
+            \textit{Minima}: $\sin(\alpha_n)=n\cdot \frac{\lambda}{b}$;\\
+            \textit{Gangunterschied}:\\
+            max: $\Delta s=(n+\frac{1}{2})\cdot\lambda$;\\
+            min: $\Delta s=n\cdot \lambda$;\\
+            $s=\frac{x}{\tan(\alpha)}$ mit Beugungsmaxima bei $\alpha=90^{\circ}$;\\
+            \textit{Minimaler Abstand}: Direkt am Spalt\\
+            \textit{Maximaler Abstand}: $\sin(\alpha_7)=(7+\frac{1}{2})\cdot\frac{\lambda}{b}$;\\
+            b: Spaltbreite, d: Spaltabstand, \\s: Abstand Maxima\\
+            $X=\frac{\pi b}{\lambda}\cdot\sin(\alpha)$
+        }
+        
+        
+    \end{minipage}
+    \begin{minipage}[t]{\verhaeltnissBreite\textwidth}
+        \eqbox{
+            \textbf{\footnotesize{Beugung am Doppelspalt}}\\
+            \textit{Maxima}: $\sin(\alpha_n)=n\cdot\frac{\lambda}{d}$;\\
+            \textit{Minima}: $\sin(\alpha_n)=(n+\frac{1}{2})\cdot\frac{\lambda}{d}$;\\
+            \textit{Gangunterschied}:\\
+            $\delta_{max}=d\cdot\sin(\alpha)=n\cdot\lambda$;\\
+            $\delta_{min}=d\cdot\sin(\alpha)=(n+\frac{1}{2})\cdot\lambda$\\
+
+        }
+        \eqbox{
+            \textbf{\footnotesize{Linsen}}\\
+                \textbf{Brennweite}:\\
+                Aus $n_{Linse}$ als einzige Brechzahl folgt:\\
+                $\Rightarrow$ $f'=\frac{n}{n-1}\cdot \frac{r_1r_2}{n(r_2-r_1)+d(n-1)}=-f$;\\
+                \\\textbf{Linsensystem}:
+                $\frac{1}{f'}=\frac{1}{f'_1}+\frac{1}{f_2'}-\frac{e_{12}}{f_1'f_2'}$ \\mit $e_{12}$ als Linsenabstand\\
+                $e_{12}=A+d_1+d_2$;\\
+                \textbf{Snellius'sches Brechungsgesetz:}\\
+                $n_1\cdot\sin(\delta)=n_2\cdot\sin(\delta)$
+        }
+        %-------------------------------------
+        \eqbox{
+            \textbf{\footnotesize{Akkustik}}\\
+            Hörbare Schallwellen: 16Hz - 20kHz\\
+            \begin{tabular}{c|c|c}
+            \centering
+                Q & B & Formel\\ \hline
+                $\bullet$ & $\leftarrow\bullet$ & $f_B=f_Q(1+\frac{v_B}{c})$\\
+                $\bullet$ & $\bullet\rightarrow$ & $f_B=f_Q(1-\frac{v_B}{c})$\\
+                $\bullet\rightarrow$ & $\bullet$ & $f_B=f_Q(\frac{c}{c-v_Q})$\\
+                $\leftarrow\bullet$ & $\bullet$ & $f_B=f_Q(\frac{c}{c+v_Q})$\\
+                $\bullet\rightarrow$ & $\leftarrow\bullet$ & $f_B=f_Q(\frac{c+v_B}{c-v_Q})$\\
+                $\leftarrow\bullet$ & $\bullet\rightarrow$ & $f_B=f_Q(\frac{c-v_B}{c+v_Q})$\\
+                $\leftarrow\bullet$ & $\leftarrow\bullet$ & $f_B=f_Q(\frac{c+v_B}{c+v_Q})$\\
+                $\bullet\rightarrow$ & $\bullet\rightarrow$ & $f_B=f_Q(\frac{c-v_B}{c-v_Q})$\\ \hline
+            \end{tabular} 
+                \\\textbf{Überschall}:\\
+                $\sin\alpha = \frac{c}{v_Q}=\frac{1}{Ma}$\; Ma = Mach\\
+        }
+        \eqbox{
+            \textbf{\footnotesize{Wellen}}\\
+                $y= \vu{y}\sin(t-\frac{x}{c})=\vu{y}2\pi\sin(\frac{t}{T}-\frac{x}{\lambda})$; \\
+                \textbf{Stehende Welle}: \\
+                $y_R=y_1+y_2$\\
+                $\Rightarrow\vu{y}[\sin2\pi(\frac{t}{T}-\frac{x}{\lambda})+\sin2\pi(\frac{t}{T}+\frac{x}{\lambda})]$;\\
+                \\\textbf{Gleiche Frequenzen}:\quad$\alpha = \varphi_2-\varphi_1 $\\
+                $y_n(x,t)=2\vu{y}\cos(\frac{\alpha}{s})\cos(\omega t - k x + \frac{\alpha}{2})$\\
+                \\\textbf{Wellenausbreitung}:\\
+                $c=\sqrt{\frac{K R T}{M}}$\\
+                K = Adiabatenkoeffizient\\
+                R = Uni. Gaskonstante ($8,314\frac{J}{mol\, K}$)\\
+                T = Absolute Temperatur in Kelvin\\
+                M = Molmasse
+
+
+        }   
+\eqbox{
+            \textbf{\footnotesize{Brechung des Lichts}}\\
+                $\frac{Med_1,c_1,n_1}{Med_2,c_2,n_2} \Rightarrow \varepsilon_1(Med_1)>\varepsilon_2(Med_2)$\\
+                \textit{Brechungsindex: n}\\
+                Winkel zum Normalenvektor der Ebene: $\varepsilon$ \\
+                \textbf{Ausbreitungsgeschwindigkeit}:$c_2=\frac{c_1}{n_2}$
+                \\\textbf{Wellenlänge}: $\lambda_2=\frac{\lambda_1}{n_2}$
+        }
+
+    \end{minipage}
+\begin{minipage}[t]{\verhaeltnissBreite\textwidth}
+    \eqbox{
+        \textbf{\footnotesize{Abbildung mit Spiegel}}\\
+            \textbf{Allgemeines vorgehen}:\\
+                0.\;Linien hinter dem Spiegel gestrichelt\\
+                1.\;Objekt zum Spiegel paraxiale Linie\\
+                2.\;Schnittpunkt: Spiegel zum Brennpunkt\\
+                3.\;Brennpunkt zu Objekt bis Spiegel\\
+                4.\;Schnittpunkt: Spiegel paraxiale\\ 
+                HINWEIS: evtl. müssen die Linien 2 und 4 verlängert werden damit ein Schnittpunkt entsteht\\ 
+            \textbf{Beschriftung}:\\
+                Abstand Brennpunkt (F) Spiegel = f\\
+                Abstand Objekt (O) Spiegel = a\\
+                Größe Objekt (P) = y\\
+                Abstand Abb.Objekt (O') Spiegel = a'\\
+                Größe Abb.Objekt (P') = y'\\
+                \textbf{Brennweite Konkavspiegel:}\\
+                $f=r\cdot (1-\frac{1}{2}\cos(\varepsilon))$        \\
+                \textbf{Abbildungsmaßstab:}\\
+                $\beta'=\frac{y'}{y}=-\frac{a'}{a}$
+    }
+    \eqbox{
+        \textbf{\footnotesize{Extras Trigonometrie}}\\
+            $\sin^2(x)+\cos^2(x)=1$;\\
+            $\sin(2\alpha)=2\sin(\alpha)\cos(\alpha)$\\
+            $\cos(2\alpha)=\cos^2(\alpha)-\sin^2(\alpha)$\\
+            $\sin^2(\alpha)=\frac{1}{2}(1-\cos(2\alpha))$\\
+            $\cos^2(\alpha)=\frac{1}{2}(1+\cos(2\alpha))$\\ 
+    }
+    \eqbox{
+        \textbf{\footnotesize{Symmetrie:}}\\
+            $\sin(-x)=-\sin(-x)$\\
+            $\cos(-x)=-\cos(x)$\\
+    }
+
+    \eqbox{
+        \textbf{\footnotesize{Additionstheoreme:}}\\
+            $\sin(\alpha\pm\beta)=\sin(\alpha)\cos(\beta)\pm\cos(\alpha)\sin(\beta)$\\
+            $\cos(\alpha\pm\beta)=\cos(\alpha)\cos(\beta)\mp\sin(\alpha)\sin(\beta)$\\
+            $\sin(\alpha)+\sin(\beta)=2\sin(\frac{\alpha+\beta}{2})\cos(\frac{\alpha-\beta}{2})$\\
+            $\sin(\alpha)-\sin(\beta)=2\cos(\frac{\alpha+\beta}{2})\sin(\frac{\alpha-\beta}{2})$\\
+            $\cos(\alpha)+\cos(\beta)=2\cos(\frac{\alpha+\beta}{2})\cos(\frac{\alpha-\beta}{2})$\\
+            $\cos(\alpha)-\cos(\beta)=2\sin(\frac{\alpha+\beta}{2})\sin(\frac{\alpha-\beta}{2})$\\
+    }
+    \eqbox{
+        \textbf{\footnotesize{Weitere Formeln:}}\\
+            \textit{abc-Formel}:\\
+            $ax^2+bx+c \Rightarrow x_{1,2}=\frac{-b\pm\sqrt{b^2-4 a c}}{2 a}$\\
+            \\\textit{pq-Formel}:\\
+            $x^2+px+q\Rightarrow x_{1,2}=-\frac{p}{2}\pm\sqrt{(\frac{p}{2})^2-q}$
+    }
+\end{minipage}
+
+
+
+
+%-------------------------------------------
+
+\end{document}
