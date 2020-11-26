@@ -1,0 +1,95 @@
+% **************************************************
+%   Wichtig für die verwendung der hsrmreport-Klasse!
+%   
+%   Die Datei hsrmreport.cls muss in dem selben Ordner sein
+%   wie die .tex Datei die diese Klasse verwenden möchte.
+%
+%   Desweiteren ist die Dokumentenklasse nach aktuellem 
+%   noch ohnen Optionen, sprich Zweiseitig, änderung 
+%   der Schriftgröße oder ähnliches. Ich werde versuchen 
+%   diese Features hinzu zufügen sobald es mir möglich ist. 
+%
+%   Falls Ihr Probleme, Anregungen oder Verbesserungen habt,
+%   könnt ihr mir das gerne mitteilenen.
+%
+%   Es kann sein das ihr evtl. manche Packete noch installieren 
+%   müsst bevor die Klasse Fehlerfrei funktioniert.
+%   Meldungen wie "Command terminated with space." können ignoriert werden.
+%
+%   Ich werde auch eine Übersicht aller Pakete schreiben, die ich verwendet habe.
+%      
+%
+%   E-Mail: timjonas.wechler@student.hs-rm.de
+% **************************************************
+
+
+\documentclass{hsrmreport}
+% **************************************************
+% Ihr könnte die Angaben der TITELSEITE hier ändern
+% **************************************************
+\newcommand{\titel}{Versuch 1}
+\newcommand{\studiengang}{Angewandte Pyhsik}
+\newcommand{\studienrichtung}{}
+\newcommand{\dokumentenart}{Praktikumsbericht}
+\newcommand{\kurs}{LV:\ Elektronik 1 Praktikum}
+\newcommand{\versuchsdurchfuehrung}{26. November 2020}
+
+%Falls ihr weniger als vier Studenten seit könnt ihr dies Einträge die zu viel sind einfach löschen. 
+%Ein Feature für das angeben der Mat.Nr. ist noch in Arbeit. 
+\newcommand{\studentA}{Cassel, Niclas}
+\newcommand{\studentB}{Wechler, Tim-Jonas}
+\newcommand{\studentC}{}
+\newcommand{\studentD}{}
+
+
+% Mit dem Befehl \today wird immer das aktuelle Datum auf der Titelseite ausgebeben.
+% Wenn dies nicht erwünscht ist einfach manuell das gewünschte Datum eintragen.
+\newcommand{\datum}{\today}
+
+
+
+\begin{document}
+    % **************************************************
+    %
+    %   ALLES zwischen hier und dem Begin des Berichts 
+    %   nicht ändern, außer ihr wisst was ihr tut ;). 
+    %
+    % **************************************************
+
+    % Title 
+    \frontpage
+
+    %Römischen Seitenzahl
+    \pagenumbering{Roman}
+    
+    %Inhaltsverzeichnis
+    \tableofcontents
+
+    %Abbildungsverzeichnis
+    %\listoffigures
+
+    %Tabellenverzeichnis
+    %\listoftables
+
+    
+    \clearpage
+
+    %Normale Seitenzahlen
+    \pagenumbering{arabic}
+
+    %Das seitenLayout mit Kapitel und Unterkapitel im Header jeder Seite des Berichts
+    \pagestyle{scrheadings}
+
+    % **************************************************
+    %
+    % HIER BEGINNT DER BERICHT
+    %
+    % **************************************************
+
+    
+        \input{content/einleitung.tex}
+    
+    
+    
+    %\printbibliography
+\end{document}
