@@ -1,0 +1,92 @@
+\chapter{Einleitung}
+    Für eine zielorientierte Durchführung des Versuchs 1 in Elektronik 1 Praktikum haben wir das Ziel definiert.
+    \section{Ziele des Versuchs}
+        Das Ziel des Versuchs ist, der grundsätzliche Umgang mit LTspice zu lernen. Damit ist gemeint dass, mit Beendigung des Versuchs erlangte Wissen aus der Simulation auf praktische Schaltungen angewendet werden kann. 
+    \section{Begriffserklärung}
+        Im Folgenden werden einige Begriffe näher erklärt die essentiel für diesen Versuch sind.
+        Als erstes werden die Begriffe Gleich- und Wechselspannung erklärt und auf die Unterschiede hingewiesen. 
+        Im Anschluss werden dann die Begriffe Effektivwert und Spitzenwert erklärt. Zum Schluss wird dann noch auf Spannungsteiler und Potentiometer eingegangen.  
+        \subsection{Gleichspannung und Wechselspannung}
+        Um die Begriffe Gleichspannung und Wechselspannung zu erklären nehmen zunächst einen Schaltkreis \frefadd{fig:stromkreis}{links}. Redet man von \textbf{Gleichspannung}, so liefert die Spannungsquelle(\(U_1\)) eine konstante Spannung \figrefadd{fig:spannung}{links} durch ein Potentialunterschied an dem Ein- und Ausgang der Spannungsquelle.
+        Bei der \textbf{Wechselspannung}, wie der Name schon sagt, wechselt die Spannung. Das Schaltbild unterscheidet sich im wesentlichen nur von der Spannungsquelle \figrefadd{fig:stromkreis}{rechts}. Das abwechsel der Spannung ist im Normalfall mit einer festen Frequenz in einem sinuförmigen Verlauf \frefadd{fig:spannung}{rechts}. 
+
+        \begin{figure}[ht]
+            \centering
+            \begin{circuitikz}[european resistors,european voltage source]
+                \draw (0,0) to[vsource,V=$U_1$] (0,3) -- (2,3)
+                to[R,R=$R_1$](2,0) -- (0,0);
+            \end{circuitikz}
+            \hspace{1cm}
+            \begin{circuitikz}[european resistors,european voltage source]
+                \draw (0,0) to[vsource,sV=$U_2$] (0,3) -- (2,3)
+                to[R,R=$R_2$](2,0) -- (0,0);
+            \end{circuitikz}
+            \caption{Stromkreis mit einer Spannungsquelle($U$) und einem Verbraucher($R$)\\links: Gleichspannung, rechts: Wechselspannung}
+            \label{fig:stromkreis}
+        \end{figure}
+
+        \begin{figure}[ht!]
+            \centering
+            
+            \begin{minipage}[t]{.45\linewidth}
+                \centering
+                \begin{tikzpicture}
+
+                    % horizontal axis
+                    \draw[->] (0,0) -- (6.25,0) node[anchor=north] {$t/s$};
+                    % labels
+                    \draw	(0,0) node[anchor=east] {0}
+                            (1,0) node[anchor=north] {1}
+                            (2,0) node[anchor=north] {2}
+                            (3,0) node[anchor=north] {3}
+                            (4,0) node[anchor=north] {4}
+                            (0,2) node[anchor=east] {5};
+                    %grid
+                    \draw[step=1cm,gray,dotted] (0.1,-2.9) grid (5.9,3.9);            
+        
+                    % vertical axis
+                    \draw[->] (0,-3) -- (0,4) node[anchor=east] {$U/V$};
+                                
+                    % Us
+                    \draw[thick] (0,2) -- (6,2);
+                    \draw (2.5,2.5) node {$U_1$}; %label
+                            
+                \end{tikzpicture}
+                
+            \end{minipage}
+            \begin{minipage}[b]{.45\linewidth}
+                \centering
+                \begin{tikzpicture}
+
+                    % horizontal axis
+                    \draw[->] (0,0) -- (6.25,0) node[anchor=north] {$t/s$};
+                    % labels
+                    \draw	(0,0) node[anchor=east] {0}
+                            (1,0) node[anchor=north] {1}
+                            (2,0) node[anchor=north] {2}
+                            (3,0) node[anchor=north] {3}
+                            (4,0) node[anchor=north] {4}
+                            (0,2) node[anchor=east] {5}
+                            (0,-2) node[anchor=east] {-5};
+                    %grid
+                    \draw[step=1cm,gray,dotted] (0.1,-2.9) grid (5.9,3.9);            
+        
+                    % vertical axis
+                    \draw[->] (0,-3) -- (0,4) node[anchor=east] {$U/V$};
+                                
+                    % Us
+                    \draw[thick] (0,0) sin (1,2) cos (2,0) sin (3,-2) cos (4,0) sin (5,2) cos (6,0);
+                    \draw (1,2.5) node {$U_2$}; %label
+                            
+                \end{tikzpicture}
+            \end{minipage}
+            \caption{links: Spanungsverlauf bei Gleichspannung, rechts: Spannungsverlauf bei Wechselspannung}
+            \label{fig:spannung}
+        \end{figure}
+       
+
+        \subsection{Effektivwert und Spitzenwert}
+            Der \textbf{Effektivwert} beschreibt den quadratischen Mittelwert physiklischer Größen, die sich über die Zeit verändern. Hat man ein Schaltkreis mit Wechselspannung \figrefadd{fig:stromkreis}{rechts}, so beschreibt der Effektivwert die gleiche Leistung, die über den Verbraucher abfällt, wie bei einem Schaltkreis mit Gleichspannung \figrefadd{fig:stromkreis}{links}.
+
+        \subsection{Spannungsteiler und Potentiometer}
+        asdasd
