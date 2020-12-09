@@ -534,10 +534,10 @@
 				\vfill
 							% Angaben zu den Autoren des Dokuments 
 							\begin{tabular}[\textwidth]{rl}
-								\textit{Studierende}&{\Large \studentA }\\
-													&{\Large \studentB }\\
-													&{\Large \studentC }\\
-								\smallskip			&{\Large \studentD }\\
+								\textit{Studierende}&{\Large \studentA }\ \matStudentA\\
+													&{\Large \studentB }\ \matStudentB\\
+													&{\Large \studentC }\ \matStudentC\\
+								\smallskip			&{\Large \studentD }\ \matStudentD\\
 							\end{tabular} \\[10mm]
 							\begin{center}
 								Rüsselsheim am Main, \datum

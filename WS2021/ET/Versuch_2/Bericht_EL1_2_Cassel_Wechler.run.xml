@@ -44,10 +44,10 @@
   <internal package="biblatex" priority="9" active="0">
     <generic>latex</generic>
     <provides type="dynamic">
-      <file>Bericht_EL1_1_Cassel_Wechler.bcf</file>
+      <file>Bericht_EL1_2_Cassel_Wechler.bcf</file>
     </provides>
     <requires type="dynamic">
-      <file>Bericht_EL1_1_Cassel_Wechler.bbl</file>
+      <file>Bericht_EL1_2_Cassel_Wechler.bbl</file>
     </requires>
     <requires type="static">
       <file>blx-dm.def</file>
@@ -66,19 +66,19 @@
     <generic>biber</generic>
     <cmdline>
       <binary>biber</binary>
-      <infile>Bericht_EL1_1_Cassel_Wechler</infile>
+      <infile>Bericht_EL1_2_Cassel_Wechler</infile>
     </cmdline>
     <input>
-      <file>Bericht_EL1_1_Cassel_Wechler.bcf</file>
+      <file>Bericht_EL1_2_Cassel_Wechler.bcf</file>
     </input>
     <output>
-      <file>Bericht_EL1_1_Cassel_Wechler.bbl</file>
+      <file>Bericht_EL1_2_Cassel_Wechler.bbl</file>
     </output>
     <provides type="dynamic">
-      <file>Bericht_EL1_1_Cassel_Wechler.bbl</file>
+      <file>Bericht_EL1_2_Cassel_Wechler.bbl</file>
     </provides>
     <requires type="dynamic">
-      <file>Bericht_EL1_1_Cassel_Wechler.bcf</file>
+      <file>Bericht_EL1_2_Cassel_Wechler.bcf</file>
     </requires>
   </external>
 </requests>
