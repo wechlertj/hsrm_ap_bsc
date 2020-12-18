@@ -1,0 +1,149 @@
+SciDAVis 2.3.0 project file
+<scripting-lang>	muParser
+<windows>	3
+<table>
+5752
+<table creation_time="2020-14-12 17:31:41:465" caption_spec="%n%C{ - }%c" name="Tabelle1" columns="5" rows="30"><comment><![CDATA[]]></comment><column creation_time="2020-14-12 17:31:41:465" caption_spec="%n%C{ - }%c" name="I_sek in A" type="TypeDouble" mode="Numeric" plot_designation="X"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2020-14-12 17:31:41:465" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2020-14-12 17:31:41:465" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">1.5100000000000000e+00</row><row type="TypeDouble" index="1" invalid="no">1.3330000000000000e+00</row><row type="TypeDouble" index="2" invalid="no">1.1899999999999999e+00</row><row type="TypeDouble" index="3" invalid="no">1.0730000000000000e+00</row><row type="TypeDouble" index="4" invalid="no">9.7899999999999998e-01</row><row type="TypeDouble" index="5" invalid="no">9.0000000000000002e-01</row></column><column creation_time="2020-14-12 17:31:41:466" caption_spec="%n%C{ - }%c" name="U_sek(I_sek) in V" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2020-14-12 17:31:41:466" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2020-14-12 17:31:41:466" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">1.8114000000000001e+01</row><row type="TypeDouble" index="1" invalid="no">1.8661000000000001e+01</row><row type="TypeDouble" index="2" invalid="no">1.9001999999999999e+01</row><row type="TypeDouble" index="3" invalid="no">1.9318000000000001e+01</row><row type="TypeDouble" index="4" invalid="no">1.9577999999999999e+01</row><row type="TypeDouble" index="5" invalid="no">1.9797000000000001e+01</row></column><column creation_time="2020-14-12 17:33:39:450" caption_spec="%n%C{ - }%c" name="error" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2020-14-12 17:41:59:081" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2020-14-12 17:41:59:081" caption_spec="%n%C{ - }%c" name="OutputFilter" format="f" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">1.0000000000000000e-03</row><row type="TypeDouble" index="1" invalid="no">1.0000000000000000e-03</row><row type="TypeDouble" index="2" invalid="no">1.0000000000000000e-03</row><row type="TypeDouble" index="3" invalid="no">1.0000000000000000e-03</row><row type="TypeDouble" index="4" invalid="no">1.0000000000000000e-03</row><row type="TypeDouble" index="5" invalid="no">1.0000000000000000e-03</row></column><column creation_time="2020-14-12 17:47:52:408" caption_spec="%n%C{ - }%c" name="I_sek 2" type="TypeDouble" mode="Numeric" plot_designation="X"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2020-14-12 17:47:52:408" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2020-14-12 17:47:52:408" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">2.3750000000000000e+00</row><row type="TypeDouble" index="1" invalid="no">1.6650000000000000e+00</row><row type="TypeDouble" index="2" invalid="no">1.2820000000000000e+00</row><row type="TypeDouble" index="3" invalid="no">1.0420000000000000e+00</row><row type="TypeDouble" index="4" invalid="no">8.7800000000000000e-01</row><row type="TypeDouble" index="5" invalid="no">7.5800000000000001e-01</row></column><column creation_time="2020-14-12 17:47:54:093" caption_spec="%n%C{ - }%c" name="U_sek 2" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2020-14-12 17:47:54:093" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2020-14-12 17:47:54:093" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">9.5020000000000007e+00</row><row type="TypeDouble" index="1" invalid="no">9.9909999999999997e+00</row><row type="TypeDouble" index="2" invalid="no">1.0256000000000000e+01</row><row type="TypeDouble" index="3" invalid="no">1.0420999999999999e+01</row><row type="TypeDouble" index="4" invalid="no">1.0534000000000001e+01</row><row type="TypeDouble" index="5" invalid="no">1.0617000000000001e+01</row></column><column_width column="0">120</column_width><column_width column="1">120</column_width><column_width column="2">86</column_width><column_width column="3">120</column_width><column_width column="4">1147</column_width></table>
+geometry	0	0	1131	638	
+
+</table>
+<multiLayer>
+Grafik1	1	1	14.12.2020 17:36
+geometry	1131	0	500	400	
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	1858	791
+Alignement	0	0
+<graph>
+ggeometry	1	2	481	337
+PlotTitle	U-I-Diagramm, Reihenschaltung	#ff000000	4
+<Antialiasing>1</Antialiasing>
+Background	#ffffffff	255
+Margin	0
+Border	0	#ff000000
+grid	0	0	0	0	#ff0000ff	0	0	#ffa0a0a4	2	0	#ff0000ff	0	0	#ffa0a0a4	2	0	0	0	2	0
+EnabledAxes	1	0	1	0	
+AxesTitles	I<sub>sek</sub> in A	Usek(Isek) in V			
+AxesTitleColors	#ff000000	#ff000000	#ff000000	#ff000000	
+AxesTitleAlignment	4	4	4	4
+TitleFont	MS Shell Dlg 2	13	75	0	0	0
+ScaleFont0	MS Shell Dlg 2	13	50	0	0	0
+ScaleFont1	MS Shell Dlg 2	3	75	0	0	0
+ScaleFont2	MS Shell Dlg 2	13	50	0	0	0
+ScaleFont3	MS Shell Dlg 2	3	75	0	0	0
+AxisFont0	MS Shell Dlg 2	11	50	0	0	0
+AxisFont1	MS Shell Dlg 2	3	50	0	0	0
+AxisFont2	MS Shell Dlg 2	11	50	0	0	0
+AxisFont3	MS Shell Dlg 2	3	50	0	0	0
+EnabledTickLabels	1	1	1	1	
+AxesColors	#ff000000	#ff000000	#ff000000	#ff000000
+AxesNumberColors	#ff000000	#ff000000	#ff000000	#ff000000
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffffff	255
+curve	Tabelle1_I_sek in A	Tabelle1_U_sek(I_sek) in V	1	0	#ff000000	0	1	7	1	#ff000000	#ff000000	0	#ff000000	14	1	0	64		2	0	0	29	1
+FunctionCurve	0,LinearAnpassung1,x,0.9,1.51	2			0	1	#ffff0000	0	1	0	0	#ff000000	#ffa0a0a4	0	#ff000000	14	1	16	64		2	0	134702032	31947664	1
+<formula>
+B=22.2440116080563
+A=-2.71926551873122
+
+A*x+B
+</formula>
+ErrorBars	0	Tabelle1_I_sek in A	Tabelle1_U_sek(I_sek) in V	Tabelle1_error	1	8	#ff000000	1	1	1
+ErrorBars	1	Tabelle1_I_sek in A	Tabelle1_U_sek(I_sek) in V	Tabelle1_error	1	8	#ff000000	1	1	1
+scale	0	18	20	0	8	5	0	0
+scale	1	18	20	0	8	5	0	0
+scale	2	0.8	1.6	0	8	5	0	0
+scale	3	0.8	1.6	0	8	5	0	0
+LabelsFormat	0	4	0	4	0	4	0	4	
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1	
+MinorTicks	1	1	1	1	
+TicksLength	5	9
+DrawAxesBackbone	1
+AxesLineWidth	1
+LabelsRotation	0	0
+<legend>	0.82448087431694	18.3185378590078	MS Shell Dlg 2	8	50	0	0	0	#ff000000	1	0	#00ffffff	0	\c{1}I<sub>sek</sub>	\c{2}Arbeitsgerade</legend>
+</graph>
+</multiLayer>
+<multiLayer>
+Grafik2	1	1	14.12.2020 17:52
+geometry	maximized	active
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	1858	791
+Alignement	0	0
+<graph>
+ggeometry	4	1	1909	635
+PlotTitle	U-I-Diagramm einer Parallelschaltung 	#ff000000	4
+<Antialiasing>1</Antialiasing>
+Background	#ffffffff	255
+Margin	0
+Border	0	#ff000000
+grid	0	0	0	0	#ff0000ff	0	0	#ffa0a0a4	2	0	#ff0000ff	0	0	#ffa0a0a4	2	0	0	0	2	0
+EnabledAxes	1	0	1	0	
+AxesTitles	Isek in A	Usek(Isek) in V			
+AxesTitleColors	#ff000000	#ff000000	#ff000000	#ff000000	
+AxesTitleAlignment	4	4	4	4
+TitleFont	MS Shell Dlg 2	18	75	0	0	0
+ScaleFont0	MS Shell Dlg 2	18	50	0	0	0
+ScaleFont1	MS Shell Dlg 2	6	75	0	0	0
+ScaleFont2	MS Shell Dlg 2	18	50	0	0	0
+ScaleFont3	MS Shell Dlg 2	6	75	0	0	0
+AxisFont0	MS Shell Dlg 2	15	50	0	0	0
+AxisFont1	MS Shell Dlg 2	6	50	0	0	0
+AxisFont2	MS Shell Dlg 2	15	50	0	0	0
+AxisFont3	MS Shell Dlg 2	6	50	0	0	0
+EnabledTickLabels	1	1	1	1	
+AxesColors	#ff000000	#ff000000	#ff000000	#ff000000
+AxesNumberColors	#ff000000	#ff000000	#ff000000	#ff000000
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffffff	255
+curve	Tabelle1_I_sek 2	Tabelle1_U_sek 2	1	0	#ff000000	0	1	7	1	#ff000000	#ff000000	0	#ff000000	14	1	0	64		2	0	0	29	1
+FunctionCurve	0,LinearAnpassung1,x,0.758,2.375	2			0	1	#ffff0000	0	1	0	0	#ff000000	#ffa0a0a4	0	#ff000000	14	1	16	64		2	0	138289224	22272	1
+<formula>
+B=11.1395969861744
+A=-0.689572739630787
+
+A*x+B
+</formula>
+ErrorBars	0	Tabelle1_I_sek 2	Tabelle1_U_sek 2	Tabelle1_error	1	8	#ff000000	1	1	1
+ErrorBars	1	Tabelle1_I_sek 2	Tabelle1_U_sek 2	Tabelle1_error	1	8	#ff000000	1	1	1
+scale	0	9.4	10.8	0	8	5	0	0
+scale	1	9.4	10.8	0	8	5	0	0
+scale	2	0.5	2.5	0	8	5	0	0
+scale	3	0.5	2.5	0	8	5	0	0
+LabelsFormat	0	4	0	4	0	4	0	4	
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1	
+MinorTicks	1	1	1	1	
+TicksLength	5	9
+DrawAxesBackbone	1
+AxesLineWidth	1
+LabelsRotation	0	0
+<legend>	0.559459459459459	9.57989821882952	MS Shell Dlg 2	15	50	0	0	0	#ff000000	1	0	#00ffffff	0	\c{1}I<sub>sek</sub>	\c{2}LinearAnpassung1	</legend>
+</graph>
+</multiLayer>
+<log>
+[14.12.2020 17:38	Diagramm: ''Grafik1'']
+Lineare Regression Anpassung an den Datensatz: Tabelle1_U_sek(I_sek) in V, unter Benutzung der Funktion: A*x+B
+Y Standardfehler: Unbekannt
+Von x = 0,9 bis x = 1,51
+B (y-Achsenabschnitt) = 22,2440116080563 +/- 0,0571221744389941
+A (Steigung) = -2,71926551873122 +/- 0,0482975824788228
+--------------------------------------------------------------------------------------
+Chi^2 = 0,00243673805003297
+R^2 = 0,998739740799326
+---------------------------------------------------------------------------------------
+[14.12.2020 17:55	Diagramm: ''Grafik2'']
+Lineare Regression Anpassung an den Datensatz: Tabelle1_U_sek 2, unter Benutzung der Funktion: A*x+B
+Y Standardfehler: Unbekannt
+Von x = 0,758 bis x = 2,375
+B (y-Achsenabschnitt) = 11,1395969861744 +/- 0,000360780379279785
+A (Steigung) = -0,689572739630787 +/- 0,000250080189580246
+--------------------------------------------------------------------------------------
+Chi^2 = 4,55521917684066e-07
+R^2 = 0,999999473912269
+---------------------------------------------------------------------------------------
+</log>
