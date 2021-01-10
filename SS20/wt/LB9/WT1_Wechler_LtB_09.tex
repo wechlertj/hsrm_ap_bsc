@@ -1,0 +1,62 @@
+\documentclass[12pt]{scrreprt}
+\usepackage{graphicx}
+\usepackage{geometry}
+\geometry{
+ a4paper,
+ left=20mm,
+ right=20mm,
+ top=25mm,
+ headheight=20mm,
+ headsep=0mm,
+ bottom=30mm,
+}
+\usepackage[T1]{fontenc}				% Trennung von Umlauten.
+\usepackage[ngerman]{babel}	
+\usepackage[utf8]{inputenc}
+\usepackage[headsepline]{scrlayer-scrpage}
+\ModifyLayer[addvoffset=-10pt]{scrheadings.head.below.line}
+\usepackage{blindtext}
+\usepackage[font=small,labelformat=empty,justification=centering]{caption}
+\setlength{\parindent}{0em}
+
+\usepackage[version=4]{mhchem}
+
+%Autordaten
+\newcommand{\datum}{09.07.2020}
+\newcommand{\autorinfo}{\textbf{Wechler, Tim-Jonas} (1137877)}
+
+
+\ihead{\textbf{WT 1} \datum}
+\chead{\autorinfo}
+\ohead{\vspace{10pt}\includegraphics[width=4cm]{logo_simple}}
+ 
+\begin{document}
+In diesem Lerntagebuch wurde das Kapitel 11 \textbf{Wärmebehandlung} behandelt.\par\medskip
+
+Durch Wärmebehandlung werden die Eigenschaften von Stählen verändert. Man unterscheidet hier zwischen Gebrauchseigenschaften wie Härte, Festigkeit und Verschleiß und Verarbeitungseigenschaften wie Zerspanbarkeit und Umformung. 
+Während eines Prozesses können nicht beide Eigenschaften Gleichermaßen erreicht werden, dies ist nur möglich indem man es nacheinander über mehrere Prozesse umsetzt.\par\smallskip
+
+Es gibt zwei Verfahren die diese Eigenschaften hervorbringen oder auch verstärken. 
+Zu erst gehe ich auf \textbf{Glühen} ein. Hierbei unterscheidet man drei Arten das Diffusionsglühen (Homogenisierungsglühen), Normalglühen und Rekristallisation.
+Beim \textbf{Diffusionsglühen} wird es ermöglicht dass das Werkstück aus einem homogenen Gefüge besteht. Die Dauer des Prozess hängt vom Gefügezustand ab.
+Das \textbf{Normalglühen} ermöglicht die ausbildung von neuen Gefügen wodurch eine höhere Zähigkeit und Festigkeit erzielt werden soll. Die Betriebstemperatur liegt zischen 20° und 50° über der Umwandlungstemperatur des Werkstoffs.
+Das Rekristallisationsglühen wird bei der Kaltumformung verwendet, die Temperatur während des Prozesses liegt bei 500° -911°. Bei Werkstücken die klein und oder dünn sind wird über eine kurze Zeit eine höhere Temperatur für diesen Prozess verwendet, ist  hingegen das Werkstück groß oder weißt eine höhere Dicke auf so wird eine geringere Temperatur mit einer höheren Zeit während des Prozesses verwendet.\par\smallskip
+
+Ein anderes Verfahren ist das \textbf{Härten}. Hierbei hat man fünf unterschiedliche Möglichkeiten dies um zu setzen. Beim Härten wird grundlegend die Ausgangstemperatur Gewollt schnell oder langsam wieder heruntergekühlt.
+Die langsamste Möglichkeit ist das Werkstück in einem Ofen kontrolliert ab zu kühlen. Hier bilden sich von der GS-Linie ausgehend zunächst Ferrit und später Perlit. 
+Die nächste, etwas schnellere Möglichkeit ist kühlen in der Luft zum Beispiel. Hierbei sind alle Umwandlungen und Vorgänge verzögert. 
+Eine etwas noch schnellere Möglichkeit ist das Werkstück in bewegter Luft herab zu kühlen. Die Diffusion ist weiter eingeschränkt und die Ausbildung von Ferrit und Perlit noch weiter verzögert.
+Durch ein Ölbad wird der Abkühlungsprozess noch schneller durchgeführt. Die Diffusion von Eisenatomen ist weitgehend verhindert und nur noch die Kohlenstoffatome können durch das Gefüge diffundieren und es bildet sich ein neues Gefüge namens Bainit. 
+Kühlen mit Wasser ist die schnellste Möglichkeit das Werkstück herab zu kühlen. Hierbei sind jegliche Diffusionen unmöglich. Es bildet sich durch die schockartige Abkühlung ein Gefüge namens Martensit aus. Martensit ist hart und spröde.\par\medskip
+
+Zum Abschluss kam noch die Härte-Prüfung. Hier unterscheidet man grundlegend zwischen zwei Möglichkeiten, einmal hat man eine vordefinierte Kraft und schaut nach wie tief ein Druckkörper in das Material eindringt. Im Anschluss berechnet man über die Kraft und der eingedrückten Fläche den Härtegrad des Werkstoffs.
+Die andere Möglichkeit ist in dem man eine Art Stempel in das Material hineindrückt, auch hier ist eine vordefinierte Kraft. Am ende sagt die Eindringtiefe darüber aus wie hart der Werkstoff ist.\par\smallskip
+Diese zwei Möglichkeiten werden in drei Prüfverfahren jeweils umgesetzt. Das erste ist das \textbf{Brinell-Verfahren}. Hier wird eine Kugel mit Größen zwischen 1 und 10 mm in den zu  prüfenden Werkstoff gedrückt. Es wird mit einer bestimmten Kraft über eine gewisse Zeit auf den Werkstoff gedrückt. Die Dauer wie lange hängt davon ab wie weich der Werkstoff ist, bei weichen Werkstoffen kann es auch bis zu mehrere Minuten dauern. Dieses Verfahren wird für eher weiche Materialien verwendet, mit einem Härtegrad bis zu 400HB.
+Das \textbf{Vickers} Prüf-Verfa genauste von allen und wird gleich wie das Brinell-Verfahren mit einer vordefinierten Kraft und einer bestimmten Zeit ausgeführt. Der einzige unterschied jedoch ist das hierbei eine Diamandpyramide statt der Kugel verwendet wird. Die Pyramide an einen Winkel von  136°. 
+In vorherigen Lerntagebücher habe ich schon darüber berichtet das ich in der Qualitätskontrolle war und für Härteprüfungen die Oberflächen der Probe vorbereiten musste. Das Verfahren was damals durchgeführt wurde war das Vickers-Verfahren. 
+Dieses Verfahren wird für einen Härte grad von 3HV bis zu 1500 HV verwendet.
+Das letzte Verfahren ist das \textbf{Rockwell-Verfhren ist dasahren} dieses unterscheidet sich in zwei Möglichkeiten, einmal mit einer Kugel und einmal mit einer Diamandpyramide mit einem Winkelvon 120°. Das Verfahren läuft prinzipiell so ab das mit einer Vorlast auf den Körper gedrückt wird und die Eindringtiefe auf diese Tiefe zu nächst genullt wird. 
+Im nächsten Schritt wird eine bestimmte Kraft ausgewirkt und weiter in die Probe gedrückt. Zum Schluss wird der Stempel entlastet, die Eindringtiefe ist direkt das Maß der Rockwellhärte. Vorteil hierbei ist das der Versuch wenig Zeit und keine große vorbereitung bedarf.\par\bigskip
+
+Zum Fazit, die Wärmebehandlung kam mir stellenweise bekannt vor da, die einzelnen Schritte in vorherigen Kapiteln schon behandelt wurden. Was ich durch aus interessant fand waren die Prüfverfahren, im speziellen das Vickers-Verfahren.
+\end{document}
