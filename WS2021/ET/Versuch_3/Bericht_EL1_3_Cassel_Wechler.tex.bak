@@ -70,7 +70,7 @@
     \tableofcontents
 
     %Abbildungsverzeichnis
-    \listoffigures
+    %\listoffigures
 
     %Tabellenverzeichnis
     %\listoftables
@@ -91,6 +91,8 @@
     % **************************************************
 
     \input{content/vorbereitung.tex}
+    \input{content/aufgaben.tex}
+   %\input{content/durchfuehrung.tex}
     \input{content/aufgabenversuch.tex}
     \input{content/fazit.tex}
     \input{content/quellen.tex}
