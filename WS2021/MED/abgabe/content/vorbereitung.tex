@@ -1,0 +1,9 @@
+\chapter{Einleitung}
+    Die der Abschlussaufgabe aus der Vorlesung Messdatenerfassung werden die Messdaten die um zur verfügung stehen mit LabVIEW ausgewertet. 
+    Es wurde mit einem dreidimensionalen Beschleunigungssensor das Verhalten eines Aufzuges gemessen. Für die Messung wird ein kapazitiver Beschleunigungssensor der Firma \textbf{Analog Devices} verwendet.
+    Die Typenbezeichnung ist \textbf{ADXL335} (\href{http://www.analog.com/media/en/technical-documentation/data-sheets/ADXL335.pdf}{Datenblatt}). Der Sensor wird auf das zu messende Objekt befestigt. 
+    Das Messsignal kommt durch eine Veränderung der Kapazität der Kondensatoren im Sensor zustande. Die Kapazität eines KOndensators, sich nicht änderten Fläche, kommt durch eine Änderung des Abstandes der Kondensatorplatten zustande.
+     \par
+    Die Messung gibt am Ende eine Spannungssignal aus das proportional zu der Beschleunigung ist. Für jede Dimension gibt es ein Signalausgang der sich je nach Bewegung und orientierung zur Bewegungsrichtung ändern kann. 
+    Bewegt sich nun der Sensor (das zu messende Objekt) in eine beliebige Richtung wird ändert sich schon gesagt die Kapazität der Kondensatoren und damit auch das Messsignal. Hat der Aufzug seine Geschwindigkeit erreicht, wird er nicht weiter beschleunigt und so mit ist das Ausgangssignal wieder auf seinem Ursprung.
+    Aus der gemessenen Beschleunigung kann nun die Geschwindigkeit und die Strecke ermittelt werden die der Aufzug währen der Messung zurücklegt. 

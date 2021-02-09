@@ -420,25 +420,20 @@
 % Bibliography
 % **************************************************
 	\RequirePackage[					% use biblatex for bibliography
-		backend=biber,					% 	- use biber backend (bibtex replacement) or bibtex
-		style=alphabetic,				% 	- use alphabetic (or numeric) bib style
-		natbib=true,					% 	- allow natbib commands
-		hyperref=true,					% 	- activate hyperref support
-		backref=true,					% 	- activate backrefs
-		isbn=false,						% 	- don't show isbn tags
-		url=false,						% 	- don't show url tags
-		doi=false,						% 	- don't show doi tags
-		urldate=long,					% 	- display type for dates
-		maxnames=3,%
-		minnames=1,%
-		maxbibnames=5,%
-		minbibnames=3,%
-		maxcitenames=2,%
-		mincitenames=1,%,
-		sorting=nty,%
-		block=ragged,% point 5
+		backend=biber      % biber or bibtex
+		%,style=authoryear    % Alphabeticalsch
+	 	,style=numeric-comp  % numerical-compressed
+	 	,sorting=none        % no sorting
+	 	,sortcites=true      % some other example options ...
+	 	,block=none
+	 	,indexing=false
+	 	,citereset=none
+	 	,isbn=true
+	 	,url=true
+	 	,doi=true            % prints doi
+	 	,natbib=true         % if you need natbib functions
 	]{biblatex}
-	%\bibliography{bib-refs}
+	\bibliography{bib-refs}
 	\DefineBibliographyStrings{ngerman}{%
 		andothers = {{et\,al\adddot}}, % 'et al.' instead of 'u.a.'
 		backrefpage = {{zitiert auf Seite}},%

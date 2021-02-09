@@ -7,10 +7,10 @@
             \centering
             \includegraphics[width=0.5\linewidth]{Bilder/21aufbau.PNG}
             \caption{Schaltung zur Aufnahme der Eingangskennlinie}
-            ~\label{fig:21}
+            \label{fig:21}
         \end{figure}
 
-        Für V1(\(U_{CE}\)) werden 5V verwendet und V2(\(U_{BE}\)) wird im Intervall zwischen 0V und 0,8V verwendet. Bei der Messung des Basisstrom \(I_B\) kamen folgende Werte heraus, welche in einem Graph dargestellt sind.
+        Für V1 (\(U_{CE}\)) werden 5V verwendet und V2 (\(U_{BE}\)) wird im Intervall zwischen 0 V und 0,8 V verwendet. Bei der Messung des Basisstrom \(I_B\) kamen folgende Werte heraus, welche im folgenden Graph dargestellt werden.
 
         \begin{figure}[!ht]
             \centering
@@ -18,17 +18,17 @@
             \caption{Messwerte des Eingangssignals eines NPN-Transistors (Typ BC547B)}
         \end{figure}
 
-        Der Basisstrom eines NPN-Transistors liegt bei 0A bis bis er circa bei einer Spannung von 640mV stark ansteigt.
+        Der Basisstrom eines NPN-Transistors liegt bei 0 A bis bis er circa bei einer Spannung von 640 mV stark ansteigt.
 
         \newpage
     \section{Bestimmung des differentiellen Eingangswiderstands}
-        Zur Bestimmung des differentiellen Eingangswiderstandes (\(r_{BE}\)) wird die Schaltung aus 2.1 leicht verändert. Die Spannungsquelle V2 wird durch eine Stromquelle I1 ersetzt. Die Spannungsquelle V1 bleibt bei 5V und I1 (\(I_B\)) wird im Intervall von \(10nA\) bis \(100\mu A\) eingesetzt. 
+        Zur Bestimmung des differentiellen Eingangswiderstandes (\(r_{BE}\)) wird die Schaltung aus 2.1 leicht verändert. Die Spannungsquelle V2 wird durch eine Stromquelle I1 ersetzt. Die Spannungsquelle V1 bleibt bei 5 V und I1 (\(I_B\)) wird im Intervall von \(10\,nA\) bis \(100\,\mu A\) eingesetzt. 
 
         \begin{figure}[!ht]
-        \centering
-        \includegraphics[width=0.5\linewidth]{Bilder/22aufbau.PNG}
-        \caption{Schaltung zur Aufnahme des Eingangswiderstandes}
-        \label{fig:22}
+            \centering
+            \includegraphics[width=0.5\linewidth]{Bilder/22aufbau.PNG}
+            \caption{Schaltung zur Aufnahme des Eingangswiderstandes}
+            \label{fig:22}
         \end{figure}
 
         Durch das Simulieren mit LT-Spice erhalten wir folgenden Graphen für den Eingangswiderstand. Die Werte sind doppellogarithmisch aufgetragen.
@@ -43,7 +43,7 @@
 
         \newpage
     \section{Aufnahme der Stromsteuerkennlinie}
-        Um die Stromsteuerkennlinie \(I_C=f(I_B)\) zu ermitteln wird die selbe Schaltung verwendet \fref{fig:22}. Die Spannungsquelle V1 wird wieder mit 5V versorgt. \(I_B\) wird dabei im Intervall von \(1\mu A\) bis \(1mA\) in der Simulation mit LT-Spice verändert. 
+        Um die Stromsteuerkennlinie \(I_C=f(I_B)\) zu ermitteln wird die selbe Schaltung verwendet \fref{fig:22}. Die Spannungsquelle V1 wird wieder mit 5 V versorgt. \(I_B\) wird dabei im Intervall von \(1\,\mu A\) bis \(1\,mA\) in der Simulation mit LT-Spice verändert. 
 
         \begin{figure}[!ht]
             \centering
@@ -55,7 +55,7 @@
 
     \section{Bestimmung der Stromverstärkung}
         Die Daten für \(I_B\) und \(I_C\) müssen mit LT-Spice aus dem Graphen entnommen werden.\\
-        Link!!!!!!!!!!\\
+        \url{https://raw.githubusercontent.com/wechlertj/hsrm_ap_bsc/master/WS2021/ET/Versuch_3/Stromstaerke.txt}\\
         Durch die Formel
         \begin{equation}
             \beta=\frac{I_C}{I_B}
@@ -78,7 +78,7 @@
             \label{fig:242}
         \end{figure}
 
-        Beim vergleichen der beiden Graphen~\ref{fig:241} und~\ref{fig:242} ist zu erkennen das diese fast gleich verlaufen. Beide laufen anfangs recht linear und ab einem bestimmtenKollektorstrom sinkt die Stromverstärkung rapide ab. Im Graph ~\ref{fig:241} von beiden Achsen der Logarithmus genommen und dann aufgetragen, im Graph ~\ref{fig:242} wurde das ganze im Graphen logarithmisch aufgezeichnet. Das Ergebnis ist das selbe.
+        Beim vergleichen der beiden Graphen~\ref{fig:241} und~\ref{fig:242} ist zu erkennen das diese fast gleich verlaufen. Beide laufen anfangs recht linear und ab einem bestimmtenKollektorstrom sinkt die Stromverstärkung rapide ab. Im Graph~\ref{fig:241} von beiden Achsen der Logarithmus genommen und dann aufgetragen, im Graph~\ref{fig:242} wurde das ganze im Graphen logarithmisch aufgezeichnet. Das Ergebnis ist das selbe.
         \newpage
 
     \section{Aufnahme der Ausgangskennlinienschar}
@@ -100,7 +100,7 @@
             \label{fig:252}
         \end{figure}
 
-        Der von LT-Spice ermittelte Graph sieht nur ansatzweise so aus wie der Graph aus dem Datenblatt. Der ermittelte Kollektorstrom (Y-Achse) entspricht nicht den Werten aus dem Datenblatt. Jedoch sind die Intervalle für den Basisstrom im Intervall von $50-100\mu A$ anders gewählt als in unserer Simulation. Deshalb kommen auch die anderen Werte für den Kollektorstrom zustande.\\
+        Der von LT-Spice ermittelte Graph sieht nur ansatzweise so aus wie der Graph aus dem Datenblatt. Der ermittelte Kollektorstrom (Y-Achse) entspricht nicht den Werten aus dem Datenblatt. Jedoch sind die Intervalle für den Basisstrom im Intervall von \(50-100\,\mu A\) anders gewählt als in unserer Simulation. Deshalb kommen auch die anderen Werte für den Kollektorstrom zustande.\\
         Im folgenden Graph ist noch die Verlustleistungshyperbel für die Schaltung aufgezeigt.
 
         
@@ -111,8 +111,8 @@
         \end{figure}
 
     \section{Bestimmung des differentiellen Ausgangswiderstands}
-        Um den differentiellen Ausgangswiderstand \(r_{CE}\) wird die Simulation mit V1 (\(U_{CE}\)) im Intervall von 4V bis 6V und \(I_B\) im Intervall von 50\(\mu A\) bis 350\(\mu A\) in 50\(\mu A\) durchgeführt. Für $I_C$ kommen dabei folgende werte heraus. \\
-        Link!!!!!!!!!\\
+        Um den differentiellen Ausgangswiderstand \(r_{CE}\) wird die Simulation mit V1 (\(U_{CE}\)) im Intervall von 4V bis 6V und \(I_B\) im Intervall von 50 \(\mu A\) bis 350 \(\mu A\) in 50 \(\mu A\) durchgeführt. Für \(I_C\) kommen dabei folgende Werte heraus.\\
+        \url{https://raw.githubusercontent.com/wechlertj/hsrm_ap_bsc/master/WS2021/ET/ Versuch_3/Ausgangswiderstand.txt}\\
 
         Durch die Formel 
         \begin{equation}
@@ -120,26 +120,26 @@
         \end{equation}
         lässt sich der Ausgangswiderstand berechnen.
 
-        Da der Strom immer von 4V auf 6V steigt ist $\Delta U_{CE}= 2V$
+        Da der Strom immer von 4 V auf 6 V steigt ist \(\Delta U_{CE}= 2V\)
 
-        Für die den Kollektorstrom $\Delta I_C$ ergeben sich durch das Subtrahieren des Kollektorstroms bei U=4V und U=6V folgende Werte.
+        Für die den Kollektorstrom \(\Delta I_C\) ergeben sich durch das Subtrahieren des Kollektorstroms bei U=4 V und U=6 V folgende Werte.
         \begin{equation}
             \Delta I_C=I_{Cmax}-I_{Cmin}
         \end{equation}
 
         \begin{table}[!ht]
         \centering
-            \caption{Simulationsergebnisse $\Delta I_C$}
+            \caption{Simulationsergebnisse \(\Delta I_C\)}
             \begin{tabular}{|c|c|}
                 \hline
-                \(I_B\) & Wert in A\\ \hline \hline
-                50\(\mu A\) & 0.0004223 \\ \hline
-                100\(\mu A\) & 0.00078471\\ \hline
-                150\(\mu A\) & 0.00110695\\ \hline
-                200\(\mu A\) & 0.00139995\\ \hline
-                250\(\mu A\) & 0.00167042\\ \hline
-                300\(\mu A\) & 0.00192287\\ \hline
-                350\(\mu A\) & 0.00216047 \\ \hline
+                \(I_B\) in \(\mu A\)& \(\Delta I_C\) in A\\ \hline \hline
+                50 & 0.0004223 \\ \hline
+                100 & 0.00078471\\ \hline
+                150 & 0.00110695\\ \hline
+                200 & 0.00139995\\ \hline
+                250 & 0.00167042\\ \hline
+                300 & 0.00192287\\ \hline
+                350 & 0.00216047 \\ \hline
             \end{tabular}
         \end{table}
 
@@ -149,15 +149,15 @@
             \caption{Simulationsergebnisse \(\Delta I_C\)}
             \begin{tabular}{|c|c|}
                 \hline
-                \(I_B\) & Wert von \(r_{CE}\) in \(\Omega\)\\
+                \(I_B\) in \(\mu A\)  & Wert von \(r_{CE}\) in \(\Omega\)\\
                 \hline \hline
-                50\(\mu A\) & 4736 \\ \hline
-                100\(\mu A\) & 2549\\ \hline
-                150\(\mu A\) & 1807\\ \hline
-                200\(\mu A\) & 1429\\ \hline
-                250\(\mu A\) & 1197\\ \hline
-                300\(\mu A\) & 1040\\ \hline
-                350\(\mu A\) & 926\\ \hline
+                50 & 4736 \\ \hline
+                100 & 2549\\ \hline
+                150 & 1807\\ \hline
+                200 & 1429\\ \hline
+                250 & 1197\\ \hline
+                300 & 1040\\ \hline
+                350 & 926\\ \hline
             \end{tabular}
         \end{table}
         \newpage
