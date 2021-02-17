@@ -1,0 +1,88 @@
+\chapter{Vorbereitung}
+    \section{Dimensionieren eines Operationsverstärkers}
+ 
+
+Zur Vorbereitung des Versuchs wird ein Instrumentenverstärker mit drei Operationsverstärkern so dimensioniert, dass eine Differenzverstärkung von $\upsilon_{\,\text{D}_{\,\text{dB}}}=40\,\text{dB}$ erreicht wird. Dafür wird die Verstärkung $\upsilon_{\,\text{D}}$ errechnet.
+\begin{align*}
+\upsilon_{\,\text{D}_{\,\text{dB}}} & = 20\,\text{dB}\cdot log_{10}(|\upsilon_{\,\text{D}}|)\\
+40\,\text{dB} & = 20\,\text{dB}\cdot 20\,\text{dB}\cdot log_{10}(|\upsilon_{\,\text{D}}|)\\
+2 & = 20\,\text{dB}\cdot log_{10}(|\upsilon_{\,\text{D}}|)\\
+10^2 & = \upsilon_{\,\text{D}}\\
+\upsilon_{\,\text{D}} & = 100                          
+\end{align*}
+Für den Differenzverstärker ist eine Verstärkung von 100 gegeben.
+\\
+Der Instrumentenverstärker aus drei Operationsverstärkern (Siehe Abb. \ref{fig:schaltung}) besteht aus einem Differenzverstärker und einem Subtrahierer. Ist bei dieser Schaltung $\,\text{U}_1=\,\text{U}_2$ gilt für die Verstärkung:
+
+\begin{equation}
+\upsilon_{\,\text{D}}=1+2\cdot \frac{\,\text{R}_6}{\,\text{R}_5}
+\end{equation}
+Der Wert 100 von $\upsilon_{\,\text{D}}$ wird nun in die Gleichung (1.1) eingesetzt.
+\begin{align*}
+100 & = 1+2\cdot \frac{\,\text{R}_6}{\,\text{R}_5}\\
+99 & = 2\cdot \frac{\,\text{R}_6}{\,\text{R}_5}\\
+49,5 & = \frac{\,\text{R}_6}{\,\text{R}_5}\\
+\end{align*}
+Aus dieser Rechnung lässt sich ableiten, dass das Verhältnis von $\frac{\,\text{R}_6}{\,\text{R}_5}$ gleich der Verstärkung von 49,5 gleichen muss. Aus der Quelle ~\cite{wiki} erhält man folgende Vorfaktoren k für die Widerstände aus der E12-Reihe.
+
+ \begin{table}[h!]
+            \centering
+            \caption{Tabelle der E12-Reihe aus der Quelle ~\cite{wiki}}
+            \begin{tabular}{| c | c | c | c | c |} 
+                \hline
+              m=0  & 1,0 & 1,2  & 1,5 & 1,8  \\
+                \hline
+              m=1 & 2,2 & 2,7 & 3,3 & 3,9 \\ 
+                \hline
+              m=2 & 4,7 & 5,6 & 6,8 & 8,2 \\
+                \hline
+            \end{tabular}
+            \label{tab:E12}
+        \end{table}
+\newpage
+Damit die richtige Verstärkung dabei heraus kommt muss der Vorfaktor k wie folgt ausprobiert werden.
+\begin{equation*}
+\frac{k\cdot 10^4\Omega}{k\cdot 10^2\Omega}=49,5
+\end{equation*}
+Das beste Ergebnis wird durch diese Faktoren erreicht.
+\begin{align*}
+\frac{3,3\cdot 10^4\Omega}{6,8\cdot 10^2\Omega}=48,53\\
+\frac{33\,\text{k}\Omega}{680\Omega}=48,53\\
+\end{align*}
+Daraus ergibt sich für die Widerstandswerte $\,\text{R}_6=33\,\text{k}\Omega$ und $\,\text{R}_5=680\Omega$.
+Diese Werte werden wieder in die Formel (1.1) eingesetzt um $\upsilon_{\,\text{D}}$ und $\upsilon_{\,\text{D}_{\,\text{dB}}}$ auszurechnen.
+\begin{align*}
+\upsilon_{\,\text{D}} & = 1+2\cdot \frac{33\,\text{k}\Omega}{680\Omega}\\
+\upsilon_{\,\text{D}} & = 98,059\\
+\upsilon_{\,\text{D}_{\,\text{dB}}} & = 20\,\text{dB}\cdot log_{10}(|\upsilon_{\,\text{D}}|)\\
+\upsilon_{\,\text{D}_{\,\text{dB}}} & = 20\,\text{dB}\cdot log_{10}(|98,059|)\\
+\upsilon_{\,\text{D}_{\,\text{dB}}} & = 39,83\,\text{dB}
+\end{align*}
+Durch dieses Ergebnis ist gezeigt, dass die Verstärkung $\upsilon_{\,\text{D}_{\,\text{dB}}}$ im Bereich der vorgegebenen Differenzverstärkung $\upsilon_{\,\text{D}_{\,\text{dB}}}=(40\pm 0,5)\,\text{dB}$ liegt.\\
+\newpage
+\section{Dimensionierung des integrierten Instrumentenverstärkers AD28226}
+Zur Dimensionierung eines Instrumentenverstärkers mit dem integrierten Instrumentenverstärker AD8226 liegt auch die Differenzverstärkung von $\upsilon_{\,\text{D}_{\,\text{dB}}}=(40\pm 0,5)\,\text{dB}$ vor. Das bedeutet das auch hier $\upsilon_{\,\text{D}} = 100$ ist. Aus dem Datenblatt Seite 19 ~\cite{datenblatt} ergibt sich folgende Formel.
+\begin{align}
+G = 1+\frac{49,4\,\text{k}\Omega}{\,\text{R}_{\,\text{G}}}
+\end{align}
+Das G steht in dieser Formel für Gain (englisch) und lässt sich mit der Verstärkung $\upsilon_{\,\text{D}} = 100$ gleichsetzen.
+\begin{align*}
+\,\text{G} & = 1+\frac{49,4\,\text{k}\Omega}{\,\text{R}_{\,\text{G}}}\\
+\,\text{R}_{\,\text{G}} & = \frac{49,4\,\text{k}\Omega}{\,\text{G}-1}\\
+                        & = \frac{49,4\,\text{k}\Omega}{100-1}\\
+                        & = 498,99\Omega\\
+\end{align*}
+In der E12-Reihe gibt es keinen Wert dieser Größe. Der Wert mit der besten Annäherung aus Tabelle 1.1 ist $\,\text{R}_{\,\text{G}}=470\Omega$.
+Der Wert von $\,\text{R}_{\,\text{G}}$ wird zum Berechnen von G nochmal in die Formel (1.2) eingefügt. 
+\begin{align*} 
+ G & = 1+\frac{49,4\,\text{k}\Omega}{\,\text{R}_{\,\text{G}}}\\
+   & = 1+\frac{49,4\,\text{k}\Omega}{470\Omega}\\
+   & = 106,106
+ \end{align*}
+Da G mit $\upsilon_{\,\text{D}}$ gleichzusetzen ist gilt:
+\begin{align*}
+\upsilon_{\,\text{D}_{\,\text{dB}}} & = 20\,\text{dB}\cdot log_{10}(|\upsilon_{\,\text{D}}|)\\
+\upsilon_{\,\text{D}_{\,\text{dB}}} & = 20\,\text{dB}\cdot log_{10}(|106,106|)\\
+\upsilon_{\,\text{D}_{\,\text{dB}}} & = 40,51\,\text{dB}
+\end{align*}
+Dieser Wert liegt ganz gering über der Behauptung $\upsilon_{\,\text{D}_{\,\text{dB}}}=(40\pm 0,5)\,\text{dB}$. Aber der Wert ist nur so gering darüber, sodass dieser noch angenommen werden kann. Also lässt sich $\,\text{R}_{\,\text{G}}=470\Omega$ vertreten, was in Abb. dem Widerstand $\,\text{R}_8$ entspricht.
