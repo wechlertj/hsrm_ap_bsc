@@ -1,0 +1,249 @@
+SciDAVis 2.3.0 project file
+<scripting-lang>	muParser
+<windows>	3
+<table>
+12619
+<table creation_time="2021-09-02 11:08:37:142" caption_spec="%n%C{ - }%c" name="Tabelle1" columns="6" rows="30"><comment><![CDATA[]]></comment><column creation_time="2021-09-02 11:08:37:142" caption_spec="%n%C{ - }%c" name="Frequenz" type="TypeDouble" mode="Numeric" plot_designation="X"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2021-16-02 08:47:09:784" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2021-16-02 08:47:09:785" caption_spec="%n%C{ - }%c" name="OutputFilter" format="f" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">3.1359999999999999e-01</row><row type="TypeDouble" index="1" invalid="no">3.9200000000000002e-01</row><row type="TypeDouble" index="2" invalid="no">4.7039999999999998e-01</row><row type="TypeDouble" index="3" invalid="no">5.0960000000000005e-01</row><row type="TypeDouble" index="4" invalid="no">5.4100000000000004e-01</row><row type="TypeDouble" index="5" invalid="no">5.4879999999999995e-01</row><row type="TypeDouble" index="6" invalid="no">5.5659999999999998e-01</row><row type="TypeDouble" index="7" invalid="no">5.6450000000000000e-01</row><row type="TypeDouble" index="8" invalid="no">5.7230000000000003e-01</row><row type="TypeDouble" index="9" invalid="no">5.8020000000000005e-01</row><row type="TypeDouble" index="10" invalid="no">5.8799999999999997e-01</row><row type="TypeDouble" index="11" invalid="no">5.9580000000000000e-01</row><row type="TypeDouble" index="12" invalid="no">6.1150000000000004e-01</row><row type="TypeDouble" index="13" invalid="no">6.2719999999999998e-01</row><row type="TypeDouble" index="14" invalid="no">7.0560000000000000e-01</row><row type="TypeDouble" index="15" invalid="no">7.4480000000000002e-01</row><row type="TypeDouble" index="16" invalid="no">8.2320000000000004e-01</row><row type="TypeDouble" index="17" invalid="no">8.6240000000000006e-01</row><row type="TypeDouble" index="18" invalid="yes">0.0000000000000000e+00</row><row type="TypeDouble" index="19" invalid="yes">0.0000000000000000e+00</row><row type="TypeDouble" index="20" invalid="yes">0.0000000000000000e+00</row><row type="TypeDouble" index="21" invalid="yes">0.0000000000000000e+00</row><row type="TypeDouble" index="22" invalid="yes">0.0000000000000000e+00</row></column><column creation_time="2021-09-02 11:08:37:142" caption_spec="%n%C{ - }%c" name="Amplitute1" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2021-09-02 11:08:37:142" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2021-09-02 11:08:37:142" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">5.9999999999999998e-01</row><row type="TypeDouble" index="1" invalid="no">8.0000000000000004e-01</row><row type="TypeDouble" index="2" invalid="no">1.0000000000000000e+00</row><row type="TypeDouble" index="3" invalid="no">1.3999999999999999e+00</row><row type="TypeDouble" index="4" invalid="no">2.3999999999999999e+00</row><row type="TypeDouble" index="5" invalid="no">2.7999999999999998e+00</row><row type="TypeDouble" index="6" invalid="no">3.3999999999999999e+00</row><row type="TypeDouble" index="7" invalid="no">4.7999999999999998e+00</row><row type="TypeDouble" index="8" invalid="no">5.4000000000000004e+00</row><row type="TypeDouble" index="9" invalid="no">7.5999999999999996e+00</row><row type="TypeDouble" index="10" invalid="no">8.0000000000000000e+00</row><row type="TypeDouble" index="11" invalid="no">6.2000000000000002e+00</row><row type="TypeDouble" index="12" invalid="no">3.7999999999999998e+00</row><row type="TypeDouble" index="13" invalid="no">3.0000000000000000e+00</row><row type="TypeDouble" index="14" invalid="no">8.0000000000000004e-01</row><row type="TypeDouble" index="15" invalid="no">5.9999999999999998e-01</row><row type="TypeDouble" index="16" invalid="no">4.0000000000000002e-01</row><row type="TypeDouble" index="17" invalid="no">4.0000000000000002e-01</row></column><column creation_time="2021-09-02 11:09:56:967" caption_spec="%n%C{ - }%c" name="Amplitude2" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2021-09-02 11:09:56:967" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2021-09-02 11:09:56:967" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">5.9999999999999998e-01</row><row type="TypeDouble" index="1" invalid="no">8.0000000000000004e-01</row><row type="TypeDouble" index="2" invalid="no">1.0000000000000000e+00</row><row type="TypeDouble" index="3" invalid="no">1.3999999999999999e+00</row><row type="TypeDouble" index="4" invalid="no">2.2000000000000002e+00</row><row type="TypeDouble" index="5" invalid="no">2.6000000000000001e+00</row><row type="TypeDouble" index="6" invalid="no">3.2000000000000002e+00</row><row type="TypeDouble" index="7" invalid="no">3.3999999999999999e+00</row><row type="TypeDouble" index="8" invalid="no">4.2000000000000002e+00</row><row type="TypeDouble" index="9" invalid="no">4.5000000000000000e+00</row><row type="TypeDouble" index="10" invalid="no">4.5999999999999996e+00</row><row type="TypeDouble" index="11" invalid="no">4.2000000000000002e+00</row><row type="TypeDouble" index="12" invalid="no">3.0000000000000000e+00</row><row type="TypeDouble" index="13" invalid="no">2.2000000000000002e+00</row><row type="TypeDouble" index="14" invalid="no">8.0000000000000004e-01</row><row type="TypeDouble" index="15" invalid="no">5.9999999999999998e-01</row><row type="TypeDouble" index="16" invalid="no">4.0000000000000002e-01</row><row type="TypeDouble" index="17" invalid="no">4.0000000000000002e-01</row></column><column creation_time="2021-09-02 11:10:39:478" caption_spec="%n%C{ - }%c" name="Amplitude3" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2021-09-02 11:10:39:478" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2021-09-02 11:10:39:478" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">5.9999999999999998e-01</row><row type="TypeDouble" index="1" invalid="no">8.0000000000000004e-01</row><row type="TypeDouble" index="2" invalid="no">1.0000000000000000e+00</row><row type="TypeDouble" index="3" invalid="no">1.2000000000000000e+00</row><row type="TypeDouble" index="4" invalid="no">1.6000000000000001e+00</row><row type="TypeDouble" index="5" invalid="no">1.6000000000000001e+00</row><row type="TypeDouble" index="6" invalid="no">1.6000000000000001e+00</row><row type="TypeDouble" index="7" invalid="no">1.8000000000000000e+00</row><row type="TypeDouble" index="8" invalid="no">1.8000000000000000e+00</row><row type="TypeDouble" index="9" invalid="no">1.8000000000000000e+00</row><row type="TypeDouble" index="10" invalid="no">1.8000000000000000e+00</row><row type="TypeDouble" index="11" invalid="no">1.8000000000000000e+00</row><row type="TypeDouble" index="12" invalid="no">1.6000000000000001e+00</row><row type="TypeDouble" index="13" invalid="no">1.3999999999999999e+00</row><row type="TypeDouble" index="14" invalid="no">8.0000000000000004e-01</row><row type="TypeDouble" index="15" invalid="no">5.9999999999999998e-01</row><row type="TypeDouble" index="16" invalid="no">4.0000000000000002e-01</row><row type="TypeDouble" index="17" invalid="no">4.0000000000000002e-01</row></column><column creation_time="2021-16-02 10:19:02:026" caption_spec="%n%C{ - }%c" name="yErr" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2021-16-02 10:19:02:026" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2021-16-02 10:19:02:027" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">1.0000000000000001e-01</row><row type="TypeDouble" index="1" invalid="no">1.0000000000000001e-01</row><row type="TypeDouble" index="2" invalid="no">1.0000000000000001e-01</row><row type="TypeDouble" index="3" invalid="no">1.0000000000000001e-01</row><row type="TypeDouble" index="4" invalid="no">1.0000000000000001e-01</row><row type="TypeDouble" index="5" invalid="no">1.0000000000000001e-01</row><row type="TypeDouble" index="6" invalid="no">1.0000000000000001e-01</row><row type="TypeDouble" index="7" invalid="no">1.0000000000000001e-01</row><row type="TypeDouble" index="8" invalid="no">1.0000000000000001e-01</row><row type="TypeDouble" index="9" invalid="no">1.0000000000000001e-01</row><row type="TypeDouble" index="10" invalid="no">1.0000000000000001e-01</row><row type="TypeDouble" index="11" invalid="no">1.0000000000000001e-01</row><row type="TypeDouble" index="12" invalid="no">1.0000000000000001e-01</row><row type="TypeDouble" index="13" invalid="no">1.0000000000000001e-01</row><row type="TypeDouble" index="14" invalid="no">1.0000000000000001e-01</row><row type="TypeDouble" index="15" invalid="no">1.0000000000000001e-01</row><row type="TypeDouble" index="16" invalid="no">1.0000000000000001e-01</row><row type="TypeDouble" index="17" invalid="no">1.0000000000000001e-01</row></column><column creation_time="2021-16-02 10:30:08:767" caption_spec="%n%C{ - }%c" name="xErr" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2021-16-02 10:30:08:767" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2021-16-02 10:30:08:768" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">1.8200000000000001e-02</row><row type="TypeDouble" index="1" invalid="no">2.0799999999999999e-02</row><row type="TypeDouble" index="2" invalid="no">2.3439999999999999e-02</row><row type="TypeDouble" index="3" invalid="no">2.4740000000000002e-02</row><row type="TypeDouble" index="4" invalid="no">2.5780000000000001e-02</row><row type="TypeDouble" index="5" invalid="no">2.6040000000000001e-02</row><row type="TypeDouble" index="6" invalid="no">2.6300000000000000e-02</row><row type="TypeDouble" index="7" invalid="no">2.6560000000000000e-02</row><row type="TypeDouble" index="8" invalid="no">2.6820000000000000e-02</row><row type="TypeDouble" index="9" invalid="no">2.7080000000000000e-02</row><row type="TypeDouble" index="10" invalid="no">2.7340000000000000e-02</row><row type="TypeDouble" index="11" invalid="no">2.7600000000000000e-02</row><row type="TypeDouble" index="12" invalid="no">2.8119999999999999e-02</row><row type="TypeDouble" index="13" invalid="no">2.8639999999999999e-02</row><row type="TypeDouble" index="14" invalid="no">3.1240000000000000e-02</row><row type="TypeDouble" index="15" invalid="no">3.2539999999999999e-02</row><row type="TypeDouble" index="16" invalid="no">3.5139999999999998e-02</row><row type="TypeDouble" index="17" invalid="no">3.6440000000000000e-02</row></column><column_width column="0">120</column_width><column_width column="1">163</column_width><column_width column="2">220</column_width><column_width column="3">199</column_width><column_width column="4">152</column_width><column_width column="5">120</column_width></table>
+geometry	0	0	696	478	
+
+</table>
+<multiLayer>
+Grafik1	1	1	09.02.2021 11:16
+geometry	696	0	500	400	
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	2662	1488
+Alignement	0	0
+<graph>
+ggeometry	1	1	482	312
+PlotTitle	Titel	#ff000000	4228
+<Antialiasing>1</Antialiasing>
+Background	#ffffffff	255
+Margin	0
+Border	0	#ff000000
+grid	0	0	0	0	#ff0000ff	0	0	#ffa0a0a4	2	0	#ff0000ff	0	0	#ffa0a0a4	2	0	0	0	2	0
+EnabledAxes	1	0	1	0	
+AxesTitles	X-Achsentitel	Y-Achsentitel			
+AxesTitleColors	#ff000000	#ff000000	#ff000000	#ff000000	
+AxesTitleAlignment	5124	4	5124	4
+TitleFont	MS Shell Dlg 2	2	75	0	0	0
+ScaleFont0	MS Shell Dlg 2	2	75	0	0	0
+ScaleFont1	MS Shell Dlg 2	2	75	0	0	0
+ScaleFont2	MS Shell Dlg 2	2	75	0	0	0
+ScaleFont3	MS Shell Dlg 2	2	75	0	0	0
+AxisFont0	MS Shell Dlg 2	2	50	0	0	0
+AxisFont1	MS Shell Dlg 2	2	50	0	0	0
+AxisFont2	MS Shell Dlg 2	2	50	0	0	0
+AxisFont3	MS Shell Dlg 2	2	50	0	0	0
+EnabledTickLabels	1	1	1	1	
+AxesColors	#ff000000	#ff000000	#ff000000	#ff000000
+AxesNumberColors	#ff000000	#ff000000	#ff000000	#ff000000
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffffff	255
+scale	0	0	10	0	8	5	0	0
+scale	1	0	9	0	8	5	0	0
+scale	2	0	20	0	8	5	0	0
+scale	3	0	20	0	8	5	0	0
+LabelsFormat	0	4	0	4	0	4	0	4	
+AxisType	0	0	1;Tabelle1_Spannung	0	
+MajorTicks	1	1	1	1	
+MinorTicks	1	1	1	1	
+TicksLength	5	9
+DrawAxesBackbone	1
+AxesLineWidth	1
+LabelsRotation	0	0
+<legend>	0.0748502994011976	8.93918918918919	MS Shell Dlg 2	2	50	0	0	0	#ff000000	1	0	#00ffffff	0	</legend>
+</graph>
+</multiLayer>
+<multiLayer>
+Grafik2	1	1	16.02.2021 08:31
+geometry	maximized	active
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	2662	1488
+Alignement	0	0
+<graph>
+ggeometry	6	5	2725	1533
+PlotTitle	Aufnahme der Resonanzkurven bei unterschiedlicher Dämpfung	#ff000000	4
+<Antialiasing>1</Antialiasing>
+Background	#ffffffff	255
+Margin	0
+Border	0	#ff000000
+grid	0	0	0	0	#ff0000ff	0	0	#ffa0a0a4	2	0	#ff0000ff	0	0	#ffa0a0a4	2	0	0	0	2	0
+EnabledAxes	1	0	1	0	
+AxesTitles	Frequenz in Hz	Schwingungsamplitude φ / Skt.			
+AxesTitleColors	#ff000000	#ff000000	#ff000000	#ff000000	
+AxesTitleAlignment	4	4	5124	4
+TitleFont	MS Shell Dlg 2	20	75	0	0	0
+ScaleFont0	MS Shell Dlg 2	18	75	0	0	0
+ScaleFont1	MS Shell Dlg 2	8	75	0	0	0
+ScaleFont2	MS Shell Dlg 2	18	75	0	0	0
+ScaleFont3	MS Shell Dlg 2	8	75	0	0	0
+AxisFont0	MS Shell Dlg 2	14	50	0	0	0
+AxisFont1	MS Shell Dlg 2	8	50	0	0	0
+AxisFont2	MS Shell Dlg 2	14	50	0	0	0
+AxisFont3	MS Shell Dlg 2	8	50	0	0	0
+EnabledTickLabels	1	1	1	1	
+AxesColors	#ff000000	#ff000000	#ff000000	#ff000000
+AxesNumberColors	#ff000000	#ff000000	#ff000000	#ff000000
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffffff	255
+curve	Tabelle1_Frequenz	Tabelle1_Amplitute1	1	0	#ffffff00	0	1	7	1	#ff000000	#ff000000	0	#ff000000	14	1	0	64		2	0	0	29	1
+curve	Tabelle1_Frequenz	Tabelle1_Amplitude2	1	0	#ff808000	0	1	7	1	#ffff0000	#ffff0000	0	#ff000000	14	1	0	64		2	0	0	29	1
+curve	Tabelle1_Frequenz	Tabelle1_Amplitude3	1	0	#ff000080	0	1	7	1	#ff0000ff	#ff0000ff	0	#ff000000	14	1	0	64		2	0	0	29	1
+FunctionCurve	0,NichtlinearAnpassung1,x,0.3136,0.8624	1000			0	1	#ff000000	0	1	7	0	#ff800000	#ff800000	0	#ff000000	14	1	16	64		2	0	112035184	1263159624	1
+<formula>
+a=0.128956138645709
+b=0.585938646458098
+c=-0.0137258118743424
+
+a/sqrt((b^2-x^2)^2+(2*c*x)^2)
+</formula>
+FunctionCurve	0,NichtlinearAnpassung2,x,0.3136,0.8624	1000			0	1	#ffff0000	0	1	0	0	#ff000000	#ffa0a0a4	0	#ff000000	14	1	16	64		2	0	167816672	1263159624	1
+<formula>
+a=0.128261379993609
+b=0.585651854011267
+c=0.0236660925874256
+
+a/sqrt((b^2-x^2)^2+(2*c*x)^2)
+</formula>
+FunctionCurve	0,NichtlinearAnpassung3,x,0.3136,0.8624	1000			0	1	#ff0000ff	0	1	7	0	#ff800000	#ff800000	0	#ff000000	14	1	16	64		2	0	115827024	1263159624	1
+<formula>
+a=0.14151892881373
+b=0.588689093895227
+c=0.067524023885911
+
+a/sqrt((b^2-x^2)^2+(2*c*x)^2)
+</formula>
+ErrorBars	1	Tabelle1_Frequenz	Tabelle1_Amplitute1	Tabelle1_yErr	1	8	#ff000000	1	1	1
+ErrorBars	1	Tabelle1_Frequenz	Tabelle1_Amplitude2	Tabelle1_yErr	1	8	#ff000000	1	1	1
+ErrorBars	1	Tabelle1_Frequenz	Tabelle1_Amplitude3	Tabelle1_yErr	1	8	#ff000000	1	1	1
+ErrorBars	0	Tabelle1_Frequenz	Tabelle1_Amplitute1	Tabelle1_xErr	1	8	#ff000000	1	1	1
+ErrorBars	1	Tabelle1_Frequenz	Tabelle1_Amplitude2	Tabelle1_yErr	1	8	#ff000000	1	1	1
+ErrorBars	1	Tabelle1_Frequenz	Tabelle1_Amplitude3	Tabelle1_yErr	1	8	#ff000000	1	1	1
+ErrorBars	0	Tabelle1_Frequenz	Tabelle1_Amplitude3	Tabelle1_xErr	1	8	#ff000000	1	1	1
+ErrorBars	0	Tabelle1_Frequenz	Tabelle1_Amplitude2	Tabelle1_xErr	1	8	#ff000000	1	1	1
+scale	0	0	9	0	8	5	0	0
+scale	1	0	9	0	8	5	0	0
+scale	2	0.2	0.9	0	7	5	0	0
+scale	3	0.2	0.9	0	8	5	0	0
+LabelsFormat	0	4	0	4	0	4	0	4	
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1	
+MinorTicks	1	1	1	1	
+TicksLength	5	9
+DrawAxesBackbone	1
+AxesLineWidth	1
+LabelsRotation	0	0
+<legend>	0.202687140115163	8.93303571428571	MS Shell Dlg 2	14	50	0	0	0	#ff000000	1	0	#00ffffff	0	\c{1}Messwerte bei I = 0,2 A	\c{2}Messwerte bei I = 0,3 A	\c{3}Messwerte bei I = 0,5 A	\c{4}NichtlinearAnpassung1	\c{5}NichtlinearAnpassung2	\c{6}NichtlinearAnpassung3</legend>
+</graph>
+</multiLayer>
+<log>
+[09.02.2021 11:20	Diagramm: ''Grafik1'']
+Nichtlinear Anpassung an den Datensatz: Tabelle1_Amplitute1, unter Benutzung der Funktion: a/sqrt((b^2-x^2)^2+(2*c*x)^2)
+Y Standardfehler: Unbekannt
+Skalierter Levenberg-Marquardt Algorithmus mit Toleranz = 0,0001
+Von x = 1 bis x = 18
+a  = 204,049661686543 +/- 18,8670120128716
+b  = -10,7562726505683 +/- 0,148094967861165
+c  = -1,08262395258753 +/- 0,157833553866971
+--------------------------------------------------------------------------------------
+Chi^2 = 9,02055295803152
+R^2 = 0,916138153228779
+---------------------------------------------------------------------------------------
+Iterationen = 15
+Status = success
+---------------------------------------------------------------------------------------
+[09.02.2021 11:29	Diagramm: ''Grafik1'']
+Nichtlinear Anpassung an den Datensatz: Tabelle1_Amplitute1, unter Benutzung der Funktion: a/sqrt((b^2-c^2)^2+(2*c*x)^2)
+Y Standardfehler: Unbekannt
+Skalierter Levenberg-Marquardt Algorithmus mit Toleranz = 0,0001
+Von x = 1 bis x = 18
+a  = 10.955,6397543945 +/- 51.979,7115222302
+b  = 0 +/- 0
+c  = 59,0417525287257 +/- 147,388861055717
+--------------------------------------------------------------------------------------
+Chi^2 = 106,499095134187
+R^2 = 0,00990428868720911
+---------------------------------------------------------------------------------------
+Iterationen = 21
+Status = success
+---------------------------------------------------------------------------------------
+[09.02.2021 11:29	Diagramm: ''Grafik1'']
+Nichtlinear Anpassung an den Datensatz: Tabelle1_Amplitute1, unter Benutzung der Funktion: a/sqrt((b^2-c^2)^2+(2*c*x)^2)
+Y Standardfehler: Unbekannt
+Skalierter Levenberg-Marquardt Algorithmus mit Toleranz = 0,0001
+Von x = 1 bis x = 18
+a  = 1,0849594144794 +/- 10.244.541,4027016
+b  = 0,587734117801 +/- 2.775.060,8124449
+c  = -0,00582003351621543 +/- 54.954,5994443741
+--------------------------------------------------------------------------------------
+Chi^2 = 106,49918513278
+R^2 = 0,00990345199258603
+---------------------------------------------------------------------------------------
+Iterationen = 9
+Status = success
+---------------------------------------------------------------------------------------
+[16.02.2021 08:34	Diagramm: ''Grafik2'']
+Nichtlinear Anpassung an den Datensatz: Tabelle1_Amplitute1, unter Benutzung der Funktion: a/sqrt((b^2-x^2)^2+(2*c*x)^2)
+Y Standardfehler: Unbekannt
+Skalierter Levenberg-Marquardt Algorithmus mit Toleranz = 0,0001
+Von x = 1 bis x = 18
+a  = 204,049325299112 +/- 18,8669834739429
+b  = -10,7562746275025 +/- 0,148094521169946
+c  = -1,08262002958407 +/- 0,157832962143684
+--------------------------------------------------------------------------------------
+Chi^2 = 9,02055295731558
+R^2 = 0,916138153235435
+---------------------------------------------------------------------------------------
+Iterationen = 18
+Status = success
+---------------------------------------------------------------------------------------
+[16.02.2021 08:48	Diagramm: ''Grafik2'']
+Nichtlinear Anpassung an den Datensatz: Tabelle1_Amplitute1, unter Benutzung der Funktion: a/sqrt((b^2-x^2)^2+(2*c*x)^2)
+Y Standardfehler: Unbekannt
+Skalierter Levenberg-Marquardt Algorithmus mit Toleranz = 0,0001
+Von x = 0,3136 bis x = 0,8624
+a  = 0,128956138645709 +/- 0,00417581798162118
+b  = 0,585938646458098 +/- 0,000533343917739859
+c  = -0,0137258118743424 +/- 0,000623571873001415
+--------------------------------------------------------------------------------------
+Chi^2 = 0,75679095517533
+R^2 = 0,992964301920732
+---------------------------------------------------------------------------------------
+Iterationen = 13
+Status = success
+---------------------------------------------------------------------------------------
+[16.02.2021 08:51	Diagramm: ''Grafik2'']
+Nichtlinear Anpassung an den Datensatz: Tabelle1_Amplitude2, unter Benutzung der Funktion: a/sqrt((b^2-x^2)^2+(2*c*x)^2)
+Y Standardfehler: Unbekannt
+Skalierter Levenberg-Marquardt Algorithmus mit Toleranz = 0,0001
+Von x = 0,3136 bis x = 0,8624
+a  = 0,128261379993609 +/- 0,0025577395178713
+b  = 0,585651854011267 +/- 0,000503386963622355
+c  = 0,0236660925874256 +/- 0,000622887590393037
+--------------------------------------------------------------------------------------
+Chi^2 = 0,105289108201753
+R^2 = 0,997359594371969
+---------------------------------------------------------------------------------------
+Iterationen = 18
+Status = success
+---------------------------------------------------------------------------------------
+[16.02.2021 08:54	Diagramm: ''Grafik2'']
+Nichtlinear Anpassung an den Datensatz: Tabelle1_Amplitude3, unter Benutzung der Funktion: a/sqrt((b^2-x^2)^2+(2*c*x)^2)
+Y Standardfehler: Unbekannt
+Skalierter Levenberg-Marquardt Algorithmus mit Toleranz = 0,0001
+Von x = 0,3136 bis x = 0,8624
+a  = 0,14151892881373 +/- 0,00467739942277151
+b  = 0,588689093895227 +/- 0,00211057353717083
+c  = 0,067524023885911 +/- 0,00257834900273384
+--------------------------------------------------------------------------------------
+Chi^2 = 0,0416853135836287
+R^2 = 0,991287324146478
+---------------------------------------------------------------------------------------
+Iterationen = 16
+Status = success
+---------------------------------------------------------------------------------------
+</log>
