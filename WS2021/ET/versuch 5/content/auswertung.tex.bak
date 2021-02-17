@@ -1,0 +1,101 @@
+\chapter{Auswertung der Berechnung und Simulation}
+    \section{Spannung in den Arbeitspunkten}
+        Der Unterschied in Tab~\ref{tab:arbeit} zwischen den berechneten und simulierten Werte sind geringfügig und zeigen dass, die Simulation akkurat arbeitet. 
+        \begin{table}[h!]
+            \centering
+            \caption{Tabelle zum Vergleichen der simulierten und berechneten Werte}
+            \begin{tabular}{| c | c | c | c |} 
+                \hline
+                & \(U_A\) in \SI{}{\V} & \(U_B\) in \SI{}{\V}  & \(U_C\) in \SI{}{\V}  \\
+                \hline
+                Berechnung & 2,609 & 1,347 & 13,88 \\ 
+                \hline
+                LTSpice & 2,557 & 1,332 & 13,968 \\
+                \hline
+            \end{tabular}
+            \label{tab:arbeit}
+        \end{table}
+    \section{Ein-und Ausgangswiderstand}
+        Der Unterschied in Tab~\ref{tab:widerstand} zwischen den berechneten und simulierten Werten des \(R_{ein}\) weichen um \SI{2.441}{\kilo\ohm} ab. Diese Abweichung kann Resultat dessen sein dass, die Stromverstärkung \(\beta\) mit einem Wert von 300 angenommen wird.
+                \begin{table}[h!]
+            \centering
+            \caption{Tabelle zum Vergleichen der simulierten und berechneten Werte}
+            \begin{tabular}{| c | c | c |} 
+                \hline
+                & \(R_{ein}\) in \SI{}{\kilo\ohm} & \(R_{aus}\) in \SI{}{\kilo\ohm}    \\
+                \hline
+                Berechnung & 26,25 & 10 \\ 
+                \hline
+                LTSpice & 28,696 & 10  \\
+                \hline
+            \end{tabular}
+            \label{tab:widerstand}
+        \end{table}
+    \section{Spannungsverstärkung und Frequenzganganalyse}
+        Die Werte in Tab~\ref{tab:frequenz} der Grenzfrequenz passen genau zu einander. Der Unterschied bei der Spannungsverstärkung  beläuft sich auf einen Wert von \(\Delta = \SI{0.434}{\dB}\).
+        \begin{table}[h!]
+            \centering
+            \caption{Tabelle zum Vergleichen der simulierten und berechneten Werte}
+            \begin{tabular}{| c | c | c | c |} 
+                \hline
+                & \(\upsilon_{dB}\) in \SI{}{\decibel} & \(f_u\) in \SI{}{\Hz}  & \(f_o\) in \SI{}{\Hz}  \\
+                \hline
+                Berechnung & 20 & 60,630 & 72,340 \\ 
+                \hline
+                LTSpice & 19,566 & 60,729 & 13,968 \\
+                \hline
+            \end{tabular}
+            \label{tab:frequenz}
+        \end{table}
+    \section{Temperaturabhängigkeit des Arbeitspunktes C}
+        Alle simulierte Werte in Tab~\ref{tab:temp} sind ca. um \(\Delta U_C\approx \SI{100}{\milli\volt}\) größer als die berechneten Werte.
+        \begin{table}[h!]
+            \centering
+            \caption{Tabelle zum Vergleichen der simulierten und berechneten Werte}
+            \begin{tabular}{| c | c | c | c |} 
+                \hline
+                & \(U_C\) bei \SI{0}{\degreeCelsius} & \(U_C\) in \SI{25}{\degreeCelsius}  & \(U_C\) in \SI{100}{\degreeCelsius}  \\
+                \hline
+                Berechnung & 14,034 & 13,88 & 13,409 \\ 
+                \hline
+                LTSpice & 14,123 & 13,979 & 13,543 \\
+                \hline
+            \end{tabular}
+            \label{tab:temp}
+        \end{table}
+        
+        \section{Großsignalbetrieb}
+Die Simulierten Werte aus LTSpice unterscheiden sich nur minimal von den berechneten Werten. Die Berechneten Werte für maximale Amplitude der Spannung ist dabei etwas höher und die Verstärkung etwas niedriger.   
+        \begin{table}[h!]
+            \centering
+            \caption{Tabelle zum Vergleichen der simulierten und berechneten Werte}
+            \begin{tabular}{| c | c | c |} 
+                \hline
+  & $\hat{(U_C)}$ in V &  $\upsilon_{dB}$ in dB   \\
+                \hline
+                Berechnung & 6,12 & 20  \\ 
+                \hline
+                LTSpice & 6,325 & 18,78 \\
+                \hline
+            \end{tabular}
+            \label{tab:großsignal}
+        \end{table}
+        
+        \section{Einfluss der Tastkopfimpedanz}
+        
+        Die Simulierten Werte aus LTSpice unterscheiden sich nur minimal von den berechneten Werten.        
+        \begin{table}[h!]
+            \centering
+            \caption{Tabelle zum Vergleichen der simulierten und berechneten Werte}
+            \begin{tabular}{| c | c | c |} 
+                \hline
+  & $f_o$ in Hz & $\upsilon$ in dB  \\
+                \hline
+                Berechnung & 46,81k & 20 \\ 
+                \hline
+                LTSpice & 46,85k & 19,455 \\
+                \hline
+            \end{tabular}
+            \label{tab:tastkopf}
+        \end{table}
+        
